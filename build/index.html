@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание проекта">
+    <title>web-portfolio</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="wrapper" tabindex="0">
+
+      <div class="visually-hidden"> <!--SVG sprite-->
+        <svg>
+          <symbol viewBox="0 0 22 18" id="icon-telegram">
+           <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
+          </symbol>
+          <symbol viewBox="0 0 20 20" id="icon-email">
+            <path d="M18.0584 0H2.94568C1.59663 0 0.5 1.441 0.5 3.2137V16.7863C0.5 18.559 1.59663 20 2.94568 20H18.0543C19.4034 20 20.5 18.559 20.5 16.7863V3.21914C20.5041 1.44644 19.4075 0 18.0584 0ZM19.3868 16.7863C19.3868 17.7488 18.7909 18.5318 18.0584 18.5318H2.94568C2.21322 18.5318 1.61732 17.7488 1.61732 16.7863V3.21914C1.61732 2.25666 2.21322 1.47363 2.94568 1.47363H18.0543C18.7868 1.47363 19.3827 2.25666 19.3827 3.21914V16.7863H19.3868Z" fill="#00B2FF"/>
+            <path d="M13.1133 9.83144L18.0047 4.06744C18.2323 3.79555 18.253 3.33334 18.0461 3.02883C17.8392 2.72975 17.4874 2.70256 17.2557 2.97445L10.5104 10.9299L9.19446 9.38554C9.19032 9.38011 9.18618 9.37467 9.18618 9.36923C9.15721 9.33117 9.12824 9.29854 9.09514 9.26591L3.74029 2.96901C3.50855 2.69713 3.1568 2.72431 2.94989 3.02883C2.74298 3.33334 2.76367 3.79555 2.99541 4.06744L7.94471 9.88038L3.0161 15.9435C2.79264 16.2208 2.78022 16.683 2.99127 16.9821C3.103 17.1343 3.25198 17.2159 3.40096 17.2159C3.53752 17.2159 3.67408 17.1506 3.78167 17.0201L8.78477 10.87L10.1421 12.4633C10.2497 12.5884 10.3821 12.6482 10.5145 12.6482C10.647 12.6482 10.7835 12.5829 10.887 12.4579L12.2816 10.8157L17.2557 17.0256C17.3633 17.1615 17.504 17.2268 17.6405 17.2268C17.7895 17.2268 17.9344 17.1506 18.0461 16.9984C18.2571 16.7047 18.2489 16.2371 18.0254 15.9598L13.1133 9.83144Z" fill="#00B2FF"/>
+          </symbol>
+          <symbol viewBox="10 10 80 80" id="background">
+            <defs>
+              <style>
+                  @keyframes rotate {
+                 0% {
+                          transform: rotate(0deg);
+                      }
+                      100% {
+                          transform: rotate(360deg);
+                      }
+                  }
+                  .out-top {
+                      animation: rotate 20s linear infinite;
+                      transform-origin: 13px 25px;
+                  }
+                  .in-top {
+                      animation: rotate 10s linear infinite;
+                      transform-origin: 13px 25px;
+                  }
+                  .out-bottom {
+                      animation: rotate 25s linear infinite;
+                      transform-origin: 84px 93px;
+                  }
+                  .in-bottom {
+                      animation: rotate 15s linear infinite;
+                      transform-origin: 84px 93px;
+                  }
+              </style>
+            </defs>
+            <path fill="#1beed0" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+            <path fill="#25d86c" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+            <path fill="#25d86c" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+            <path fill="#1beed0" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+          </symbol>
+        <svg>
+      </div>
+
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__wrapper-logo">
+            <a class="header__logo" href="#">
+              <span class="header__title">Maxim Ratkevich</span>
+            </a>
+          </div>
+          <nav class="nav">
+            <ul class="nav__list clear-list">
+              <li class="nav__item">
+                <a href="https://t.me/MaximRatkevich" target="_blank" aria-label="мой телеграм">
+                  <p class="nav__text">@MaximRatkevich</p>
+                  <svg class="nav__icon nav__icon--telegram" width="22" height="18">
+                    <use xlink:href="#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <!--
+              <li class="nav__item">
+                <a href="mailto:maximratkevich@gmail.com" target="_blank" aria-label="почта">
+                  <p class="nav__text">Почта</p>
+                  <svg class="nav__icon" width="20" height="20">
+                    <use xlink:href="#icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+              -->
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-block">
+          <div class="main-block__container container">
+            <svg class="main-block__svg main-block__svg--background" width="1000" height="1000">
+              <use xlink:href="#background"></use>
+            </svg>
+            <div class="main-block__wrapper">
+              <div class="main-block__info">
+                <h1 class="main-block__title">
+                  Немного обо мне
+                </h1>
+                <p class="main-block__description">
+                  Увлеченный IT разработкой специалист. По меркам индустрии относительно недавно работаю в IT.
+                  Однако за небольшое время, успел набрать кейсов, реальных задач, проектов и прокачать свои навыки.
+                  Сохраняю открытый разум и не замыленный взгляд на индустрию и технологии в целом. Легко изучаю новые технологии,
+                  добавляю новые умения, скилы, виденье своему стеку. Выгоден вам тем что
+                  открыт новому, открыт вам и вашему проекту. И с горящими глазами возьмусь за него.
+                </p>
+              </div>
+              <div class="main-block__portfolio-wrapper">
+                <div class="main-block__portfolio">
+                  <button class="main-block__butten">
+                    Мои работы
+                  </button>
+                </div>
+                <div class="main-block__connection">
+                  <h1 class="main-block__title">
+                    Связатьс со мной
+                  </h1>
+                  <ul class="main-block__list clear-list">
+                    <li class="main-block__item">
+                      <a class="main-block__link" href="#">
+                        <p class="nav__text">Телеграм:@MaximRatkevich</p>
+                        <svg class="nav__icon nav__icon--telegram" width="22" height="18">
+                          <use xlink:href="#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-block__item">
+                      <a class="main-block__link" href="#">
+                        <p class="nav__text">FL.ru:@MaximRatkevich</p>
+                        <svg class="nav__icon nav__icon--telegram" width="22" height="18">
+                          <use xlink:href="#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="main-block__item">
+                      <a class="main-block__link" href="#">
+                        <p class="nav__text">freelance.habr.com:@MaximRatkevich</p>
+                        <svg class="nav__icon nav__icon--telegram" width="22" height="18">
+                          <use xlink:href="#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="portfolio">
+          <button class="portfolio__button portfolio__button--prev">
+            <img class="portfolio__button-img" src="img/left.png" alt="предыдущие изображение" width="30" height="30">
+          </button>
+          <ul class="portfolio__list clear-list">
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <img class="portfolio__img" src="img/Smart-Device.PNG" alt="Smart Device" width="600" height="400">
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <img class="portfolio__img" src="img/DrinkGo.PNG" alt="DrinkGo" width="600" height="400">
+              </a>
+            </li>
+            <li class="portfolio__item--active">
+              <a href="#" class="portfolio__link">
+                <img class="portfolio__img" src="img/Kekstagram.PNG" alt=" Kekstagram" width="600" height="400">
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="#" class="portfolio__link">
+                <img class="portfolio__img" src="img/Sedona.PNG" alt="Sedona" width="600" height="400">
+              </a>
+            </li>
+          </ul>
+          <button class="portfolio__button portfolio__button--next">
+            <img class="portfolio__button-img" src="img/right.png" alt="следующие изображение" width="30" height="30">
+          </button>
+        </section>
+      </main>
+
+      <footer class="footer">
+
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

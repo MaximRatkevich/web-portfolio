@@ -1,0 +1,45 @@
+
+.main-block__container {
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: $color-bermuda;
+  height: 650px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.main-block {
+  width: 99%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main-block__svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.main-block__wrapper {
+  display: flex;
+  flex-direction: row;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  background-color: aliceblue;
+  opacity: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.main-block__info {
+  width: 40%;
+}
+
+.main-block__portfolio-wrapper {
+  width: 40%;
+}

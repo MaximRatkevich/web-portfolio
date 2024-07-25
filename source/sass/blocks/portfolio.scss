@@ -1,0 +1,71 @@
+.portfolio {
+  background-color: aquamarine;
+  position: relative;
+  width: 99%;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px 15px 15px 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.portfolio__item {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+}
+
+.portfolio__item--active {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.portfolio__link {
+  width: 100%;
+}
+
+.portfolio__img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.portfolio__button {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.portfolio__button-img {
+  position: relative;
+  margin: auto;
+  width: 40%;
+  height: 10%;
+}
+
+.portfolio__button--prev {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.portfolio__button--next {
+  position: absolute;
+  padding: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
