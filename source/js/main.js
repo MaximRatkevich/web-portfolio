@@ -1,9 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {} from './modules/modals/modals';
-import {} from './modules/buttons/info-button';
-import {} from './modules/buttons/state-change';
-import {} from './modules/buttons/scroll-button';
-import {} from './modules/header/header-fixed';
+import {} from './modules/slider/slider';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

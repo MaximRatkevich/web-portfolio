@@ -71,8 +71,7 @@
           <nav class="nav">
             <ul class="nav__list clear-list">
               <li class="nav__item">
-                <a href="https://t.me/MaximRatkevich" target="_blank" aria-label="мой телеграм">
-                  <p class="nav__text">@MaximRatkevich</p>
+                <a class="nav__link" href="https://t.me/MaximRatkevich" target="_blank" aria-label="телеграм">
                   <svg class="nav__icon nav__icon--telegram" width="22" height="18">
                     <use xlink:href="#icon-telegram"></use>
                   </svg>
@@ -114,9 +113,18 @@
               </div>
               <div class="main-block__portfolio-wrapper">
                 <div class="main-block__portfolio">
-                  <a class="main-block__link main-block__link--git" href="https://github.com/mxz22345?tab=repositories">
-
-                  </a>
+                  <h1 class="main-block__title">
+                    github
+                  </h1>
+                  <div class="main-block__git-wrapper">
+                    <a class="main-block__link" target="_blank" href="https://github.com/MaximRatkevich">
+                      <img class="main-block__img" src="img/git.png" alt="телеграм" width="40" height="40">
+                      <p class="main-block__text">github.com</p>
+                    </a>
+                    <p class="main-block__git-description">
+                      исходный код проектов
+                    </p>
+                  </div>
                 </div>
                 <div class="main-block__connection">
                   <h1 class="main-block__title">
@@ -124,27 +132,21 @@
                   </h1>
                   <ul class="main-block__list clear-list">
                     <li class="main-block__item">
-                      <a class="main-block__link" href="#">
-                        <p class="nav__text">Телеграм:@MaximRatkevich</p>
-                        <svg class="nav__icon nav__icon--telegram" width="22" height="18">
-                          <use xlink:href="#icon-telegram"></use>
-                        </svg>
+                      <a class="main-block__link" target="_blank" href="https://t.me/MaximRatkevich">
+                        <img class="main-block__img" src="img/telegram.png" alt="телеграм" width="40" height="40">
+                        <p class="main-block__text">telegram</p>
                       </a>
                     </li>
                     <li class="main-block__item">
-                      <a class="main-block__link" href="#">
-                        <p class="nav__text">FL.ru:@MaximRatkevich</p>
-                        <svg class="nav__icon nav__icon--fl" width="22" height="18">
-
-                        </svg>
+                      <a class="main-block__link" target="_blank" href="https://www.fl.ru/users/maximratkevich/portfolio/">
+                        <img class="main-block__img" src="img/FL.png" alt="фриланс биржа FL.ru" width="40" height="40">
+                        <p class="main-block__text">FL.ru</p>
                       </a>
                     </li>
                     <li class="main-block__item">
-                      <a class="main-block__link" href="#">
-                        <p class="nav__text">freelance.habr:@MaximRatkevich</p>
-                        <svg class="nav__icon nav__icon--freelance.habr" width="22" height="18">
-
-                        </svg>
+                      <a class="main-block__link" target="_blank" href="https://freelance.habr.com/freelancers/MaximRatkevich">
+                        <img class="main-block__img" src="img/habr.png" alt="фриланс биржа " width="40" height="40">
+                        <p class="main-block__text">freelance.habr</p>
                       </a>
                     </li>
                   </ul>
@@ -160,22 +162,26 @@
           <ul class="portfolio__list clear-list">
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
-                <img class="portfolio__img" src="img/Smart-Device.PNG" alt="Smart Device" width="600" height="400">
+                <img class="portfolio__img" src="img/DrinkGo.PNG" alt="DrinkGo" width="600" height="400">
+                <span class="portfolio__tooltip">Перейти на сайт DrinkGo</span>
               </a>
             </li>
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
-                <img class="portfolio__img" src="img/DrinkGo.PNG" alt="DrinkGo" width="600" height="400">
+                <img class="portfolio__img" src="img/Smart-Device.PNG" alt="Smart Device" width="600" height="400">
+                <span class="portfolio__tooltip">Перейти на сайт Smart Device</span>
               </a>
             </li>
-            <li class="portfolio__item--active">
+            <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <img class="portfolio__img" src="img/Kekstagram.PNG" alt=" Kekstagram" width="600" height="400">
+                <span class="portfolio__tooltip">Перейти на сайт Kekstagram</span>
               </a>
             </li>
             <li class="portfolio__item">
               <a href="#" class="portfolio__link">
                 <img class="portfolio__img" src="img/Sedona.PNG" alt="Sedona" width="600" height="400">
+                <span class="portfolio__tooltip">Перейти на сайт Sedona</span>
               </a>
             </li>
           </ul>
@@ -186,7 +192,36 @@
       </main>
 
       <footer class="footer">
-
+        <div class="footer__container container">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list clear-list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" target="_blank" href="https://t.me/MaximRatkevich">
+                  <img class="footer-nav__img" src="img/telegram.png" alt="телеграм" width="40" height="40">
+                  <p class="footer-nav__text">telegram</p>
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" target="_blank" href="https://www.fl.ru/users/maximratkevich/portfolio/">
+                  <img class="footer-nav__img" src="img/FL.png" alt="фриланс биржа FL.ru" width="40" height="40">
+                  <p class="footer-nav__text">FL.ru</p>
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" target="_blank" href="https://freelance.habr.com/freelancers/MaximRatkevich">
+                  <img class="footer-nav__img" src="img/habr.png" alt="фриланс биржа " width="40" height="40">
+                  <p class="footer-nav__text">freelance.habr</p>
+                </a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" target="_blank" href="https://github.com/MaximRatkevich">
+                  <img class="footer-nav__img" src="img/git.png" alt="телеграм" width="40" height="40">
+                  <p class="footer-nav__text">github.com</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
