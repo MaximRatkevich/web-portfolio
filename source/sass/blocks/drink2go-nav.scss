@@ -1,0 +1,85 @@
+.drink2go-nav__toggle {
+  position: relative;
+  display: block;
+  padding: 0;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.drink2go-nav__toggle:active {
+  background-color: #f0ebff;
+}
+
+.drink2go-nav__list {
+  position: relative;
+}
+
+.drink2go-nav--closed .drink2go-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 0 0 #333333, 0 7px 0 0 #333333, 0 12px 0 0 #333333;
+}
+
+.drink2go-nav--opened .drink2go-nav__toggle {
+  background-color: rgba(0, 0, 0, 0);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 22px;
+    width: 16px;
+    height: 2px;
+    background-color: #333333;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.drink2go-nav--nojs .drink2go-nav__toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .drink2go-nav--closed .drink2go-nav__list {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .drink2go-nav--opened .drink2go-nav__list {
+    display: block;
+  }
+
+  .drink2go-nav--closed,
+  .drink2go-nav__list {
+    display: block;
+  }
+}

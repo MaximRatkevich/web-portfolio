@@ -1,0 +1,137 @@
+.drink2go-advantages__text-feature {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7859cf;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.drink2go-advantages__title-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.drink2go-advantages__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    padding-top: 24px;
+  }
+}
+
+.drink2go-advantages__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 339px 339px;
+    column-gap: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.drink2go-advantages__description {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    width: 317px;
+  }
+}
+
+.drink2go-advantages__item {
+  width: 280px;
+  margin: auto;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 339px;
+    display: flex;
+    position: relative;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    display: block;
+  }
+}
+
+.drink2go-advantages__icon {
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.drink2go-advantages__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.drink2go-advantages__container {
+  padding-top: 50px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 248px;
+    padding-bottom: 68;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+}

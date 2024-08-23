@@ -1,0 +1,37 @@
+.drink2go-sorting__container {
+  background: #f8f8f8;
+}
+
+.drink2go-sorting__wrapper {
+  margin: auto;
+  display: flex;
+  width: 280px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 292px;
+  }
+}
+
+.drink2go-sorting__control-view {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-left: auto;
+  width: 165px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: 0;
+  color: #7859cf;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.drink2go-sorting__title {
+  margin: 0;
+  padding-top: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}

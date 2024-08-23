@@ -1,0 +1,25 @@
+.drink2go-social__list {
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  column-gap: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 39px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+  }
+}
+
+.drink2go-social__item {
+  height: 40px;
+}
+
+.drink2go-social__icon {
+  display: block;
+  margin: 10px;
+}

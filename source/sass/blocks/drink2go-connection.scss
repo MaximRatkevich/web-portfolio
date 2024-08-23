@@ -1,0 +1,63 @@
+.drink2go-connection__wrapper {
+  margin: auto;
+  display: flex;
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 318px;
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+.drink2go-connection__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 318px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+  }
+}
+
+.drink2go-connection {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.drink2go-connection__wrapper-logo {
+  padding-left: 20px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+}
+
+.drink2go-connection__social {
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 40px;
+  }
+}
+

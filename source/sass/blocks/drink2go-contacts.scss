@@ -1,0 +1,85 @@
+.drink2go-contacts__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7859cf;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.drink2go-contacts__item {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+}
+
+.drink2go-contacts__address-icon {
+  position: absolute;
+}
+
+.drink2go-contacts__address:hover {
+  color: #9070ec;
+}
+
+.drink2go-contacts__address:focus {
+  color: #9070ec;
+}
+
+.drink2go-contacts__address:active {
+  color: #593cac;
+}
+
+.drink2go-contacts__phone:hover {
+  color: #9070ec;
+}
+
+.drink2go-contacts__phone:focus {
+  color: #9070ec;
+}
+
+.drink2go-contacts__phone:active {
+  color: #593cac;
+}
+
+.drink2go-contacts {
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    padding-top: 49px;
+  }
+}
+
+.drink2go-contacts__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 21px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 201px;
+  }
+}
+
+.drink2go-contacts__phone {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 21px;
+  color: #333333;
+}
+
+.drink2go-contacts__phone-icon {
+  position: absolute;
+  top: 2px;
+}

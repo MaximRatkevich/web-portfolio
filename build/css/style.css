@@ -410,6 +410,38 @@ template {
   src: url("../../fonts/PTMono-Regular.woff2") format("woff2"), url("../../fonts/PTMono-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -553,6 +585,17 @@ button,
   appearance: none;
 }
 
+.drink2go-button {
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #7859cf;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .wrapper {
   position: relative;
   background-color: rgba(169, 169, 169, 0.508);
@@ -578,6 +621,36 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+
+/* Стиль для кнопки возврата */
+
+.back-button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: #41b3a3;
+  /* Цвет фона кнопки */
+  color: #fff;
+  /* Цвет текста */
+  padding: 10px 20px;
+  /* Отступы вокруг текста */
+  text-decoration: none;
+  /* Убирает подчеркивание */
+  border-radius: 15px 15px 15px 15px;
+  border-bottom: 5px solid #1beed0;
+  border-right: 5px solid #1beed0;
+  font-size: 16px;
+  /* Размер шрифта */
+  font-weight: bold;
+  /* Жирный шрифт */
+  z-index: 1000;
+  /* Убедитесь, что кнопка находится поверх остальных элементов */
+}
+
+.back-button:hover {
+  background-color: rgba(65, 179, 164, 0.7529411765);
+  /* Цвет фона при наведении */
 }
 
 .rouble {
@@ -644,6 +717,11 @@ button,
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.drink2go-container {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .header__container {
@@ -1095,6 +1173,1053 @@ button,
   width: 100%;
 }
 
+.drink2go-header__wrapper-logo {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.drink2go-header__logo-text {
+  display: none;
+}
+
+.drink2go-header__wrapper {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.drink2go-header__container {
+  position: relative;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.drink2go-page__body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  margin: 0;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.drink2go-page {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.drink2go-nav__toggle {
+  position: relative;
+  display: block;
+  padding: 0;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 0;
+}
+
+.drink2go-nav__toggle:active {
+  background-color: #f0ebff;
+}
+
+.drink2go-nav__list {
+  position: relative;
+}
+
+.drink2go-nav--closed .drink2go-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 2px 0 0 #333333, 0 7px 0 0 #333333, 0 12px 0 0 #333333;
+  box-shadow: 0 2px 0 0 #333333, 0 7px 0 0 #333333, 0 12px 0 0 #333333;
+}
+
+.drink2go-nav--opened .drink2go-nav__toggle {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.drink2go-nav--opened .drink2go-nav__toggle::before,
+.drink2go-nav--opened .drink2go-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 22px;
+  width: 16px;
+  height: 2px;
+  background-color: #333333;
+}
+
+.drink2go-nav--opened .drink2go-nav__toggle::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.drink2go-nav--opened .drink2go-nav__toggle::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.drink2go-nav--nojs .drink2go-nav__toggle {
+  display: none;
+}
+
+.drink2go-site-list {
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.drink2go-site-list__item {
+  width: 320px;
+  height: 57px;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: 1px solid #f0ebff;
+}
+
+.drink2go-site-list__item:last-child {
+  border-bottom: 1px solid #f0ebff;
+}
+
+.drink2go-site-list__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.drink2go-site-list__link:active {
+  background-color: #f0ebff;
+}
+
+.drink2go-site-list__link--active {
+  border-bottom: 2px solid #7859cf;
+  color: #7859cf;
+}
+
+.drink2go-user__text {
+  display: none;
+  margin: 0;
+}
+
+.drink2go-user__link {
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.drink2go-user__item {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.drink2go-user__item:active {
+  background-color: #f0ebff;
+}
+
+.drink2go-user__link:active {
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.drink2go-user__icon {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.drink2go-user__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drink2go-slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  background-color: #f3ebe1;
+}
+
+.drink2go-slider__arrow {
+  width: 20px;
+  height: 656px;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.drink2go-slider__buy {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.drink2go-slider__button {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 113px;
+  border-radius: 4px;
+}
+
+.drink2go-slider__img {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.drink2go-slider__title {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.drink2go-slider__description {
+  margin: auto;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  width: 280px;
+}
+
+.drink2go-slider__price {
+  padding-left: 6px;
+  padding-top: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.drink2go-slider__new {
+  display: block;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7859cf;
+}
+
+.drink2go-slider__discount {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #7859cf;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+}
+
+.drink2go-slider__product {
+  width: 280px;
+}
+
+.drink2go-advantages__text-feature {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7859cf;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.drink2go-advantages__title-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 36px;
+}
+
+.drink2go-advantages__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.drink2go-advantages__description {
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.drink2go-advantages__item {
+  width: 280px;
+  margin: auto;
+  padding-bottom: 32px;
+}
+
+.drink2go-advantages__icon {
+  display: block;
+  margin: auto;
+}
+
+.drink2go-advantages__container {
+  padding-top: 50px;
+  padding-bottom: 28px;
+}
+
+.drink2go-catalog__text {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #7859cf;
+  text-transform: uppercase;
+}
+
+.drink2go-catalog__container {
+  padding-top: 50px;
+  background: #f8f8f8;
+}
+
+.drink2go-catalog__title-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.drink2go-catalog__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.drink2go-catalog__button-apply {
+  margin: auto;
+  margin-bottom: 24px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+.drink2go-catalog__button-reset {
+  border: 0;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 36px;
+  padding: 11px 23px 10px 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  background: #ffffff;
+  cursor: pointer;
+  color: #7859cf;
+}
+
+.drink2go-range__bar {
+  position: absolute;
+  height: 4px;
+  width: 280px;
+  background-color: #9070ec;
+}
+
+.drink2go-range__fieldset {
+  padding: 0;
+  margin: auto;
+  border: 0;
+  width: 280px;
+  min-height: 133px;
+}
+
+.drink2go-range__title {
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.drink2go-range__scale {
+  position: relative;
+  height: 4px;
+  top: -5px;
+  background: #e2e2e2;
+}
+
+.drink2go-range__inputs {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.drink2go-range__input {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+  border: 2px solid #9070ec;
+  border-radius: 4px;
+  padding: 10px 7px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+}
+
+.drink2go-range__toggle {
+  position: absolute;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #9070ec;
+}
+
+.drink2go-range__toggle-min {
+  top: -10px;
+  left: -12px;
+}
+
+.drink2go-range__toggle-max {
+  top: -10px;
+  right: -12px;
+}
+
+.drink2go-milk__fieldset {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 0;
+  padding-bottom: 2px;
+  padding-right: 0;
+  border: 0;
+}
+
+.drink2go-milk__control-mark {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #bdbdbd;
+  margin: 0;
+}
+
+.drink2go-milk__control-input[type=radio]:checked + .drink2go-milk__control-mark::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #7859cf;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.drink2go-milk__control-input[type=radio]:checked + .drink2go-milk__control-mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background: #7859cf;
+  border-radius: 50%;
+  content: "";
+}
+
+.drink2go-milk__title {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.drink2go-milk__item {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+.drink2go-milk__control-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 34px;
+  cursor: pointer;
+}
+
+.drink2go-country__fieldset {
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 0;
+  padding-bottom: 11px;
+  padding-right: 0;
+  border: 0;
+}
+
+.drink2go-country__control-checkmark {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  background: #bdbdbd;
+  margin: 0;
+}
+
+.drink2go-country__control-checkmark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0;
+}
+
+.drink2go-country__control-input[type=checkbox]:checked + .drink2go-country__control-checkmark {
+  position: absolute;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  background: #7859cf;
+  margin: 0;
+  content: "";
+}
+
+.drink2go-country__control-input[type=checkbox]:checked + .drink2go-country__control-checkmark::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0;
+}
+
+.drink2go-country__control-input[type=checkbox]:checked + .drink2go-country__control-checkmark::after {
+  content: "";
+  display: none;
+}
+
+.drink2go-country__title {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.drink2go-country__item {
+  padding-bottom: 23px;
+}
+
+.drink2go-country__control-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 54px;
+  cursor: pointer;
+}
+
+.drink2go-sorting__container {
+  background: #f8f8f8;
+}
+
+.drink2go-sorting__wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  height: 32px;
+}
+
+.drink2go-sorting__control-view {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin-left: auto;
+  width: 165px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: 0;
+  color: #7859cf;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.drink2go-sorting__title {
+  margin: 0;
+  padding-top: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.drink2go-cards__container {
+  background: #f8f8f8;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+.drink2go-cards__item {
+  margin: auto;
+  background: #ffffff;
+  border-radius: 4px;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.drink2go-cards__price {
+  padding-top: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.drink2go-cards__img {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  display: block;
+  margin: auto;
+}
+
+.drink2go-cards__title {
+  margin: auto;
+  padding-left: 20px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.drink2go-cards__description {
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 230px;
+}
+
+.drink2go-cards__button {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 46px;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  width: 141px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.drink2go-cards__add-icon {
+  position: absolute;
+  left: 20px;
+}
+
+.drink2go-cards__price-wrapper {
+  margin: auto;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 242px;
+}
+
+.drink2go-pagination__container {
+  background: #f8f8f8;
+  padding-bottom: 44px;
+}
+
+.drink2go-pagination__list {
+  margin: auto;
+  width: 280px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px 40px 40px 40px 40px;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+.drink2go-pagination__text {
+  display: none;
+}
+
+.drink2go-pagination__button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.drink2go-pagination__item {
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.drink2go-pagination__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7859cf;
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+  text-align: center;
+}
+
+.drink2go-pagination-link-current {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.drink2go-map__container {
+  background-image: url("../../img/map-mobile.jpg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 420px;
+}
+
+.drink2go-map__drink2go {
+  width: 320px;
+  height: 420px;
+}
+
+.drink2go-connection__wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+}
+
+.drink2go-connection__logo-text {
+  display: none;
+}
+
+.drink2go-connection__wrapper-logo {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.drink2go-connection__social {
+  margin-left: auto;
+}
+
+.drink2go-social__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px 40px 40px;
+  grid-template-columns: 40px 40px 40px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.drink2go-social__item {
+  height: 40px;
+}
+
+.drink2go-social__icon {
+  display: block;
+  margin: 10px;
+}
+
+.drink2go-online-store__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7859cf;
+  padding-left: 20px;
+}
+
+.drink2go-online-store {
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+  padding-bottom: 8px;
+}
+
+.drink2go-online-store__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.drink2go-online-store__link:hover {
+  color: #9070ec;
+}
+
+.drink2go-online-store__link:focus {
+  color: #9070ec;
+}
+
+.drink2go-online-store__link:active {
+  color: #593cac;
+}
+
+.drink2go-online-store__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.drink2go-media__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7859cf;
+  padding-left: 20px;
+}
+
+.drink2go-media {
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+  padding-bottom: 8px;
+}
+
+.drink2go-media__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.drink2go-media__link:hover {
+  color: #9070ec;
+}
+
+.drink2go-media__link:focus {
+  color: #9070ec;
+}
+
+.drink2go-media__link:active {
+  color: #593cac;
+}
+
+.drink2go-media__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.drink2go-contacts__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7859cf;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.drink2go-contacts__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+}
+
+.drink2go-contacts__address-icon {
+  position: absolute;
+}
+
+.drink2go-contacts__address:hover {
+  color: #9070ec;
+}
+
+.drink2go-contacts__address:focus {
+  color: #9070ec;
+}
+
+.drink2go-contacts__address:active {
+  color: #593cac;
+}
+
+.drink2go-contacts__phone:hover {
+  color: #9070ec;
+}
+
+.drink2go-contacts__phone:focus {
+  color: #9070ec;
+}
+
+.drink2go-contacts__phone:active {
+  color: #593cac;
+}
+
+.drink2go-contacts {
+  padding-top: 20px;
+  border-bottom: 1px solid #f0ebff;
+  padding-bottom: 20px;
+}
+
+.drink2go-contacts__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 21px;
+  padding-bottom: 16px;
+}
+
+.drink2go-contacts__phone {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 21px;
+  color: #333333;
+}
+
+.drink2go-contacts__phone-icon {
+  position: absolute;
+  top: 2px;
+}
+
+.drink2go-copyright__wrapper {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 206px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.drink2go-copyright__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+  padding-right: 6px;
+}
+
+.drink2go-copyright__link-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+
+.drink2go-copyright__link-icon {
+  position: absolute;
+  right: -16px;
+}
+
+.drink2go-copyright__link {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1135,6 +2260,648 @@ button,
     }
   }
 */
+
+@media (min-width: 768px) {
+  .drink2go-container {
+    width: 768px;
+  }
+
+  .drink2go-header__wrapper-logo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .drink2go-header__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .drink2go-nav__toggle {
+    display: none;
+  }
+
+  .drink2go-site-list {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 60px;
+  }
+
+  .drink2go-site-list__item {
+    width: 103px;
+    border: 0;
+  }
+
+  .drink2go-site-list__item:last-child {
+    border: 0;
+  }
+
+  .drink2go-site-list__link {
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .drink2go-site-list__link:focus {
+    color: #7859cf;
+  }
+
+  .drink2go-site-list__link:hover {
+    color: #7859cf;
+  }
+
+  .drink2go-site-list__link:active {
+    color: #7859cf;
+  }
+
+  .drink2go-user__item {
+    width: 60px;
+    height: 80px;
+  }
+
+  .drink2go-user__icon {
+    top: 32px;
+  }
+
+  .drink2go-user__list {
+    padding-right: 20px;
+  }
+
+  .drink2go-slider__container {
+    position: relative;
+  }
+
+  .drink2go-slider__arrow {
+    width: 80px;
+  }
+
+  .drink2go-slider__buy {
+    padding-bottom: 316px;
+  }
+
+  .drink2go-slider__img {
+    position: absolute;
+    padding: 0;
+    top: 352px;
+    left: 146px;
+  }
+
+  .drink2go-slider__title {
+    font-size: 56px;
+    line-height: 80px;
+    padding-bottom: 16px;
+  }
+
+  .drink2go-slider__description {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+  }
+
+  .drink2go-slider__new {
+    padding-top: 60px;
+  }
+
+  .drink2go-slider__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 608px;
+  }
+
+  .drink2go-advantages__title-main {
+    font-size: 42px;
+    line-height: 64px;
+    padding-bottom: 60px;
+  }
+
+  .drink2go-advantages__title {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: start;
+    padding-bottom: 10px;
+  }
+
+  .drink2go-advantages__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 339px 339px;
+    grid-template-columns: 339px 339px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    padding-left: 30px;
+  }
+
+  .drink2go-advantages__description {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: start;
+  }
+
+  .drink2go-advantages__item {
+    width: 339px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 0;
+  }
+
+  .drink2go-advantages__icon {
+    position: absolute;
+  }
+
+  .drink2go-advantages__text {
+    padding-left: 72px;
+  }
+
+  .drink2go-advantages__container {
+    padding-top: 248px;
+    padding-bottom: 68;
+  }
+
+  .drink2go-catalog__form {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 728px;
+  }
+
+  .drink2go-catalog__container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .drink2go-catalog__title-main {
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  .drink2go-catalog__button-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 40px;
+    width: 320px;
+    margin-left: 183px;
+  }
+
+  .drink2go-catalog__button-apply {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 8px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .drink2go-catalog__button-reset {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    margin-left: 29px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .drink2go-milk__list {
+    width: 210px;
+  }
+
+  .drink2go-country__fieldset {
+    padding-bottom: 19px;
+  }
+
+  .drink2go-sorting__wrapper {
+    margin-right: 20px;
+    width: 292px;
+  }
+
+  .drink2go-cards__container {
+    padding-top: 26px;
+    padding-bottom: 70px;
+  }
+
+  .drink2go-cards__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 349px 349px;
+    grid-template-columns: 349px 349px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .drink2go-cards__item {
+    width: 349px;
+  }
+
+  .drink2go-cards__title {
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  .drink2go-cards__description {
+    margin: auto;
+    width: 289px;
+    padding-left: 0;
+  }
+
+  .drink2go-cards__price-wrapper {
+    width: 281px;
+  }
+
+  .drink2go-pagination__container {
+    padding-bottom: 90px;
+  }
+
+  .drink2go-pagination__list {
+    -ms-grid-columns: 91px 40px 40px 40px 101px;
+    grid-template-columns: 91px 40px 40px 40px 101px;
+    width: 395px;
+    margin-right: 20px;
+  }
+
+  .drink2go-pagination__text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 20px;
+    color: #7859cf;
+  }
+
+  .drink2go-pagination__arrow {
+    display: none;
+  }
+
+  .drink2go-map__container {
+    width: 768px;
+    height: 480px;
+    background-image: url("../../img/map-tablet.jpg");
+  }
+
+  .drink2go-map__drink2go {
+    width: 768px;
+    height: 480px;
+  }
+
+  .drink2go-connection__wrapper {
+    border: 0;
+    width: 768px;
+  }
+
+  .drink2go-connection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .drink2go-social__list {
+    -webkit-column-gap: 39px;
+    -moz-column-gap: 39px;
+    column-gap: 39px;
+    padding-right: 30px;
+  }
+
+  .drink2go-online-store {
+    border: 0;
+    width: 223px;
+    padding-top: 10px;
+  }
+
+  .drink2go-media {
+    border: 0;
+    width: 222px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  .drink2go-contacts {
+    border: 0;
+    padding-top: 10px;
+  }
+
+  .drink2go-contacts__address {
+    width: 201px;
+  }
+
+  .drink2go-copyright__wrapper {
+    padding-top: 10px;
+    width: 206px;
+    padding-bottom: 40px;
+    margin-left: 281px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1440px) {
+  .drink2go-slider__title {
+    text-align: start;
+  }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .drink2go-map__container {
+    background-image: url("../../img/map-tablet@2x.jpg");
+    background-size: 1338px auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .drink2go-container {
+    width: 1440px;
+  }
+
+  .drink2go-header__wrapper-logo {
+    padding-left: 40px;
+  }
+
+  .drink2go-header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .drink2go-header__logo-text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 126px;
+    margin-left: 20px;
+  }
+
+  .drink2go-nav__toggle {
+    display: none;
+  }
+
+  .drink2go-site-list {
+    padding-right: 162px;
+  }
+
+  .drink2go-site-list__item {
+    margin-left: 20px;
+  }
+
+  .drink2go-user__text {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 44px;
+    padding-top: 32px;
+  }
+
+  .drink2go-user__item {
+    width: 112px;
+    margin-right: 20px;
+  }
+
+  .drink2go-user__link:active {
+    color: #7859cf;
+  }
+
+  .drink2go-user__item:hover {
+    color: #7859cf;
+  }
+
+  .drink2go-user__item:focus {
+    color: #7859cf;
+  }
+
+  .drink2go-user__item:last-child {
+    width: 129px;
+  }
+
+  .drink2go-user__icon {
+    left: 20px;
+  }
+
+  .drink2go-slider__arrow {
+    height: 714px;
+  }
+
+  .drink2go-slider__buy {
+    text-align: start;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+
+  .drink2go-slider__button {
+    height: 40px;
+  }
+
+  .drink2go-slider__img {
+    position: static;
+    padding-top: 30px;
+    padding-bottom: 84px;
+    padding-right: 30px;
+    padding-left: 25px;
+  }
+
+  .drink2go-slider__description {
+    text-align: start;
+    padding-bottom: 40px;
+  }
+
+  .drink2go-slider__new {
+    text-align: start;
+    padding-top: 180px;
+  }
+
+  .drink2go-slider__product {
+    width: 1280px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .drink2go-advantages__title-main {
+    padding-bottom: 80px;
+  }
+
+  .drink2go-advantages__title {
+    text-align: center;
+    padding-top: 24px;
+  }
+
+  .drink2go-advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .drink2go-advantages__description {
+    text-align: center;
+    width: 317px;
+  }
+
+  .drink2go-advantages__item {
+    width: 317px;
+    display: block;
+  }
+
+  .drink2go-advantages__icon {
+    position: static;
+  }
+
+  .drink2go-advantages__text {
+    padding: 0;
+  }
+
+  .drink2go-advantages__container {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+
+  .drink2go-catalog__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .drink2go-catalog__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .drink2go-catalog__button-wrapper {
+    margin: 0;
+  }
+
+  .drink2go-catalog__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .drink2go-range__fieldset {
+    width: 318px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .drink2go-cards__list {
+    -ms-grid-columns: 317px 317px 317px;
+    grid-template-columns: 317px 317px 317px;
+    width: 1011px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .drink2go-cards__item {
+    width: 317px;
+  }
+
+  .drink2go-map__container {
+    width: 1440px;
+    height: 520px;
+    background-image: url("../../img/map-desktop.jpg");
+  }
+
+  .drink2go-map__drink2go {
+    width: 1440px;
+    height: 520px;
+  }
+
+  .drink2go-connection__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 318px;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .drink2go-connection__logo-text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 318px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+  }
+
+  .drink2go-connection__wrapper-logo {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+
+  .drink2go-connection__social {
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  .drink2go-social__list {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .drink2go-online-store {
+    width: 317px;
+    padding-top: 49px;
+  }
+
+  .drink2go-media {
+    width: 318px;
+    padding-top: 49px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .drink2go-contacts {
+    width: 318px;
+    padding-top: 49px;
+  }
+
+  .drink2go-copyright__wrapper {
+    margin-left: 617px;
+  }
+}
 
 @media (max-width: 1440px) {
   .main-block__container {
@@ -1317,5 +3084,24 @@ button,
 
   .main-block__link {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .drink2go-nav--closed .drink2go-nav__list {
+    display: none;
+  }
+
+  .drink2go-nav--closed .drink2go-nav__list--active {
+    display: block;
+  }
+
+  .drink2go-nav--opened .drink2go-nav__list {
+    display: block;
+  }
+
+  .drink2go-nav--closed,
+  .drink2go-nav__list {
+    display: block;
   }
 }

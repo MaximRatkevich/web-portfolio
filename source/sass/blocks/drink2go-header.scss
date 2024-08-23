@@ -1,0 +1,55 @@
+.drink2go-header__wrapper-logo {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+}
+
+.drink2go-header__logo {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    text-decoration: none;
+  }
+}
+
+.drink2go-header__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    width: 126px;
+    margin-left: 20px;
+  }
+}
+
+.drink2go-header__wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.drink2go-header__container {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}

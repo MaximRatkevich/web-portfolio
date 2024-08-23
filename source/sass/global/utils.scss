@@ -17,6 +17,27 @@
   }
 }
 
+/* Стиль для кнопки возврата */
+.back-button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  background-color: #41b3a3; /* Цвет фона кнопки */
+  color: #fff; /* Цвет текста */
+  padding: 10px 20px; /* Отступы вокруг текста */
+  text-decoration: none; /* Убирает подчеркивание */
+  border-radius: 15px 15px 15px 15px;
+  border-bottom: 5px solid $color-bright-turquoise;
+  border-right: 5px solid $color-bright-turquoise;
+  font-size: 16px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  z-index: 1000; /* Убедитесь, что кнопка находится поверх остальных элементов */
+}
+
+.back-button:hover {
+  background-color: #41b3a4c0; /* Цвет фона при наведении */
+}
+
 .rouble {
   font-family: $ff-rouble;
   /* stylelint-disable */

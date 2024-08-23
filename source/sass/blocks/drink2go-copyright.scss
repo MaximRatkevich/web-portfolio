@@ -1,0 +1,46 @@
+.drink2go-copyright__wrapper {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 206px;
+  margin: auto;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    width: 206px;
+    padding-bottom: 40px;
+    margin-left: 281px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 617px;
+  }
+}
+
+.drink2go-copyright__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+  padding-right: 6px;
+}
+
+.drink2go-copyright__link-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+
+.drink2go-copyright__link-icon {
+  position: absolute;
+  right: -16px;
+}
+
+.drink2go-copyright__link {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+}

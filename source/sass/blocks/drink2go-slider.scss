@@ -1,0 +1,171 @@
+.drink2go-slider__container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f3ebe1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.drink2go-slider__arrow {
+  width: 20px;
+  height: 656px;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
+}
+
+.drink2go-slider__buy {
+  width: 230px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 316px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+.drink2go-slider__button {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 113px;
+  border-radius: 4px;
+
+  @media (min-width: $desktop-width) {
+    height: 40px;
+  }
+}
+
+.drink2go-slider__img {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    padding: 0;
+    top: 352px;
+    left: 146px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    padding-top: 30px;
+    padding-bottom: 84px;
+    padding-right: 30px;
+    padding-left: 25px;
+  }
+}
+
+.drink2go-slider__title {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    padding-bottom: 16px;
+
+    @media (min-width: $desktop-width) {
+      text-align: start;
+    }
+  }
+}
+
+.drink2go-slider__description {
+  margin: auto;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-bottom: 40px;
+  }
+}
+
+.drink2go-slider__price {
+  padding-left: 6px;
+  padding-top: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.drink2go-slider__new {
+  display: block;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7859cf;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-top: 180px;
+  }
+}
+
+.drink2go-slider__discount {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #7859cf;
+  text-decoration-line: line-through;
+}
+
+.drink2go-slider__product {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 608px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+    flex-direction: row;
+  }
+}
