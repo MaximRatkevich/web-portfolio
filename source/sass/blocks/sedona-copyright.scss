@@ -1,0 +1,47 @@
+.sedona-copyright__text {
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 29px;
+  padding-left: 95px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 100px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-left: 260px;
+  }
+}
+
+.sedona-copyright__icon {
+  margin-top: 35px;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+    margin-left: 13px;
+  }
+}
+
+.sedona-copyright__link {
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+
+.sedona-copyright__link:hover {
+  color: #81b3d2;
+  fill: #81b3d2;
+}
+
+.sedona-copyright__link:active {
+  color: #b3b3b3;
+  fill: #b3b3b3;
+}

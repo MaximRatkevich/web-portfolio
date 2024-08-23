@@ -1,0 +1,211 @@
+.sedona-fotos__title {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 8px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    color: #ffffff;
+    padding-top: 22px;
+  }
+}
+
+.sedona-fotos__text-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+}
+
+.sedona-fotos__picture {
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+  }
+}
+
+.sedona-fotos__picture-long {
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.sedona-fotos__author {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.sedona-fotos__liked-number {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    color: #ffffff;
+    padding-top: 32px;
+  }
+}
+
+.sedona-fotos__icon {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: $sedona-desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
+.sedona-fotos__button {
+  width: 25px;
+  height: 25px;
+  margin-top: 11px;
+  padding: 0;
+  margin-right: 13px;
+  border: 0;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-top: 28px;
+  }
+}
+
+.sedona-fotos__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    width: 324px;
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 400px;
+    height: 267px;
+    position: relative;
+  }
+}
+
+.sedona-fotos__wrapper-long {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+    width: 648px;
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+  }
+}
+
+.sedona-fotos__img-long {
+  background-color: #000000;
+}
+
+.sedona-fotos__img {
+  background-color: #000000;
+}
+
+.sedona-fotos__description-wrapper-long {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.sedona-fotos__description-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.sedona-fotos__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-right: 60px;
+    flex-direction: row;
+    width: 648px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.sedona-fotos__container {
+  background-color: #ffffff;
+}

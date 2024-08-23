@@ -1,0 +1,38 @@
+.sedona-map__arizon {
+  margin: 0;
+  position: relative;
+  border: none;
+  height: 350px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 1200px;
+  }
+}
+
+.sedona-map__container {
+  margin-top: 49px;
+  background-image: url("../img/map-mobile.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    width: 768px;
+    margin-top: 58px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    width: 1200px;
+    margin-top: 66px;
+    margin-bottom: 0;
+  }
+}

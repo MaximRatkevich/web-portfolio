@@ -1,0 +1,90 @@
+.sedona-nav__toggle {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    display: none;
+  }
+}
+
+.sedona-nav {
+  position: relative;
+}
+
+.sedona-nav--closed .sedona-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 0 0 #81b3d2, 0 13px 0 0 #81b3d2, 0 22px 0 0 #81b3d2;
+}
+
+.sedona-nav--closed .sedona-nav__toggle:active::before {
+  box-shadow:
+    0 8px 0 0 fade(#81b3d2, 30%),
+    0 16px 0 0 fade(#81b3d2, 30%);
+}
+
+.sedona-nav--opened .sedona-nav__toggle {
+  top: 17px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.sedona-nav--nojs .sedona-nav__toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .sedona-nav--closed .sedona-nav__list {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .sedona-nav--opened .sedona-nav__list {
+    display: block;
+  }
+
+  .sedona-nav--closed,
+  .sedona-nav__list {
+    display: block;
+  }
+}

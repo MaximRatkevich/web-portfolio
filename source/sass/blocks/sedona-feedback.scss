@@ -1,0 +1,66 @@
+.sedona-feedback__title-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    font-size: 30px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-top: 115px;
+  }
+}
+
+.sedona-feedback__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  width: 306px;
+
+  @media (min-width: $tablet-width) {
+    width: 438px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 102px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-bottom: 67px;
+    padding-top: 28px;
+  }
+}
+
+.sedona-feedback__fieldset {
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+}
+
+.sedona-feedback__textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.sedona-feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.sedona-feedback__entry-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.sedona-feedback__container {
+  background-color: #ffffff;
+}

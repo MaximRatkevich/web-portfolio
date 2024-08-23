@@ -1,0 +1,166 @@
+.sedona-places__control-label {
+  display: block;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-left: 62px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.sedona-places__item {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 224px;
+    margin-right: 32px;
+
+    @media (min-width: $sedona-desktop-width) {
+      margin-right: 62px;
+    }
+  }
+}
+
+.sedona-places__item--bridge {
+  @media (min-width: $sedona-desktop-width) {
+    width: 173px;
+  }
+}
+
+.sedona-places__item--mountain {
+  @media (min-width: $sedona-desktop-width) {
+    width: 170px;
+  }
+}
+
+.sedona-places__item--park {
+  @media (min-width: $sedona-desktop-width) {
+    width: 153px;
+  }
+}
+
+.sedona-places__item--rocks {
+  @media (min-width: $sedona-desktop-width) {
+    width: 184px;
+  }
+}
+
+.sedona-places__title {
+  position: relative;
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    font-size: 21px;
+    padding-bottom: 28px;
+    width: 308px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+}
+
+.sedona-places__title::before {
+  @media (min-width: $sedona-desktop-width) {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.sedona-places__title::after {
+  @media (min-width: $sedona-desktop-width) {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.sedona-places__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-places-container {
+  border-bottom: solid 1px;
+  border-color: rgba(229, 229, 229, 1);
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.sedona-places__control-checkmark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin: 0;
+  }
+}
+
+.sedona-places__control-input:hover + .sedona-places__control-checkmark {
+  background: #e5e5e5;
+}
+
+.sedona-places__control-input:active + .sedona-places__control-checkmark {
+  background: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sedona-places__control-input[type="checkbox"]:checked + .sedona-places__control-checkmark {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 15px;
+  content: "";
+}
+
+.sedona-places__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    margin: auto;
+    margin-left: 144px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 164px;
+    width: 1000px;
+  }
+}

@@ -1,0 +1,52 @@
+.sedona-welcome {
+  background-image: url("../img/background-welcome-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-welcome-desktop@2x.jpg");
+      background-size: 1338px auto;
+    }
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 1200px;
+  }
+}
+
+.sedona-welcome-container {
+  background-image: url("../img/dilider.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sedona-welcome__img {
+  display: inline;
+  margin-left: 46px;
+  margin-top: 52px;
+  margin-bottom: 67px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin-right: 155px;
+    margin-left: 156px;
+    margin-top: 95px;
+    margin-bottom: 117px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-right: 371px;
+    margin-left: 369px;
+    margin-bottom: 121px;
+    margin-top: 101px;
+  }
+}
+
+.sedona-welcome__title {
+  margin: 0;
+}

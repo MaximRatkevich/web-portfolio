@@ -1,0 +1,9 @@
+.sedona-footer-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}

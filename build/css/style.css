@@ -442,6 +442,22 @@ template {
   src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+
 *,
 *::before,
 *::after {
@@ -2220,6 +2236,1427 @@ button,
   text-decoration: none;
 }
 
+.sedona-header__logo {
+  margin-left: 67px;
+  display: none;
+}
+
+.sedona-header__icon {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.sedona-header__toggle {
+  margin-left: 252px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 68px;
+  height: 56px;
+  background-color: #ffffff;
+}
+
+.sedona-header {
+  min-height: 55px;
+}
+
+.sedona-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sedona-header__container {
+  background-color: #ffffff;
+}
+
+.sedona-site-list {
+  text-align: center;
+  font-weight: 700;
+}
+
+.sedona-site-list__item:hover {
+  background: #669ec0;
+  -webkit-box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.sedona-site-list__item:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.sedona-site-list__item {
+  height: 55px;
+  background-color: #81b3d2;
+  -webkit-box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.sedona-site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 12px;
+}
+
+.sedona-site-list__link--index {
+  display: block;
+  padding-left: 123px;
+  padding-right: 123px;
+}
+
+.sedona-site-list__link--catalog {
+  display: block;
+  padding-left: 97px;
+  padding-right: 97px;
+}
+
+.sedona-site-list__link--academy {
+  display: block;
+  padding-left: 96px;
+  padding-right: 97px;
+}
+
+.sedona-site-list__link--form {
+  display: block;
+}
+
+.sedona-main-welcome {
+  background-image: url("../img/background-welcome-main-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #000000;
+}
+
+.sedona-main-welcome__container {
+  background-image: url("../img/dilider.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sedona-main-welcome__img {
+  display: inline;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-top: 90px;
+  margin-bottom: 85px;
+}
+
+.sedona-main-welcome__title {
+  margin: 0;
+}
+
+.sedona-advantages {
+  padding-top: 32px;
+  background-color: #ffffff;
+}
+
+.sedona-advantages__img {
+  background-color: #000000;
+  height: auto;
+}
+
+.sedona-advantages__title-main {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 35px;
+  width: 255px;
+}
+
+.sedona-advantages__description-main {
+  margin: auto;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  width: 282px;
+}
+
+.sedona-advantages__blue-decoration {
+  background-color: #81b3d2;
+  background-image: url("/img/white-decoration.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.sedona-advantages__blue {
+  background-color: #81b3d2;
+}
+
+.sedona-advantages__title-blue-decoration {
+  font-size: 18px;
+  padding-top: 70px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sedona-advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-advantages__title-blue {
+  font-size: 18px;
+  padding-top: 39px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sedona-advantages__br {
+  display: none;
+}
+
+.sedona-advantages__description-blue-decoration {
+  padding-bottom: 41px;
+  margin: auto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 282px;
+}
+
+.sedona-advantages__description-blue {
+  margin: 0;
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sedona-advantages__number-blue {
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sedona-advantages__number-grey {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+
+.sedona-advantages__description-grey {
+  margin: 0;
+  padding-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+}
+
+.sedona-advantages__grey-square {
+  width: 264px;
+  margin: auto;
+}
+
+.sedona-advantages__grey-road {
+  width: 237px;
+  margin: auto;
+}
+
+.sedona-advantages__grey-tourists {
+  width: 250px;
+  margin: auto;
+}
+
+.sedona-advantages__wrapper-grey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #eeeeee;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.sedona-advantages__item-grey:nth-child(2) {
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: #d6d6d6;
+}
+
+.sedona-advantages__picture {
+  height: 260px;
+}
+
+.sedona-advantages__title-grey {
+  margin: auto;
+  font-size: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+}
+
+.sedona-advantages__wrapper-bridge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-advantages__wrapper-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-sublist {
+  padding-left: 65px;
+}
+
+.sedona-sublist__title {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.sedona-sublist__description {
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.sedona-sublist__housing {
+  width: 225px;
+}
+
+.sedona-sublist__eating {
+  padding-left: 3px;
+  width: 240px;
+}
+
+.sedona-sublist__desktop-br {
+  display: none;
+}
+
+.sedona-sublist__tablet-br {
+  display: none;
+}
+
+.sedona-sublist__souvenir {
+  width: 202px;
+}
+
+.sedona-sublist__wrapper {
+  margin-bottom: 52px;
+  padding-top: 1px;
+}
+
+.sedona-sublist__list {
+  position: relative;
+}
+
+.sedona-sublist__icon-housing {
+  position: absolute;
+  left: -49px;
+  top: 25px;
+}
+
+.sedona-sublist__icon-eating {
+  position: absolute;
+  left: -49px;
+  top: 158px;
+}
+
+.sedona-sublist__icon-souvenir {
+  position: absolute;
+  left: -45px;
+  top: 272px;
+}
+
+.sedona-search__title {
+  margin: 0;
+  padding-top: 38px;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sedona-search__container {
+  background-color: #ffffff;
+}
+
+.sedona-search__br {
+  display: none;
+}
+
+.sedona-search__description {
+  width: 262px;
+  margin: 0;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 34px;
+  color: rgb(51, 51, 51);
+}
+
+.sedona-search__button:hover {
+  background: #669ec0;
+}
+
+.sedona-search__button:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sedona-search__button {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #5496bd;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  width: 250px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sedona-contacts-footer__text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.sedona-contacts-footer__link {
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sedona-contacts-footer__text:hover {
+  color: #81b3d2;
+}
+
+.sedona-contacts-footer__text:active {
+  opacity: 0.3;
+}
+
+.sedona-contacts-footer__wrapper {
+  padding-top: 31px;
+}
+
+.sedona-social__link {
+  background-color: #5fa8d3;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.sedona-social__link:hover {
+  background: #5496bd;
+}
+
+.sedona-social__link:active {
+  background: #5496bd;
+}
+
+.sedona-social__icon:active {
+  opacity: 0.3;
+}
+
+.sedona-social__list {
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 84px;
+  margin-top: 32px;
+}
+
+.sedona-social__item {
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+.sedona-social__icon--vk {
+  margin: 17px 12px 17px 12px;
+}
+
+.sedona-social__icon--telegram {
+  margin: 15px 13px 15px 13px;
+}
+
+.sedona-social__icon--youtube {
+  margin: 17px 14px 17px 14px;
+}
+
+.sedona-copyright__text {
+  display: block;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 29px;
+  padding-left: 95px;
+}
+
+.sedona-copyright__icon {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.sedona-copyright__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #000000;
+}
+
+.sedona-copyright__link:hover {
+  color: #81b3d2;
+  fill: #81b3d2;
+}
+
+.sedona-copyright__link:active {
+  color: #b3b3b3;
+  fill: #b3b3b3;
+}
+
+.sedona-welcome {
+  background-image: url("../img/background-welcome-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #000000;
+}
+
+.sedona-welcome-container {
+  background-image: url("../img/dilider.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.sedona-welcome__img {
+  display: inline;
+  margin-left: 46px;
+  margin-top: 52px;
+  margin-bottom: 67px;
+}
+
+.sedona-welcome__title {
+  margin: 0;
+}
+
+.sedona-content-catalog__title {
+  margin: 0;
+  padding-top: 37px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+.sedona-content-catalog__wrapper {
+  background-color: #ffffff;
+}
+
+.sedona-content-catalog__tablet-br {
+  display: none;
+}
+
+.sedona-content-catalog__description {
+  margin: auto;
+  padding-bottom: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  width: 280px;
+}
+
+.sedona-content-catalog__container {
+  border-bottom: 1px solid;
+  border-color: rgb(229, 229, 229);
+}
+
+.sedona-fotos__title {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 8px;
+  text-transform: uppercase;
+}
+
+.sedona-fotos__picture {
+  height: 280px;
+}
+
+.sedona-fotos__picture-long {
+  height: 280px;
+}
+
+.sedona-fotos__author {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+
+.sedona-fotos__liked-number {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: inherit;
+}
+
+.sedona-fotos__icon {
+  fill: #000000;
+  opacity: 0.3;
+}
+
+.sedona-fotos__button {
+  width: 25px;
+  height: 25px;
+  margin-top: 11px;
+  padding: 0;
+  margin-right: 13px;
+  border: 0;
+  background-color: inherit;
+}
+
+.sedona-fotos__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+}
+
+.sedona-fotos__wrapper-long {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+}
+
+.sedona-fotos__img-long {
+  background-color: #000000;
+}
+
+.sedona-fotos__img {
+  background-color: #000000;
+}
+
+.sedona-fotos__description-wrapper-long {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-fotos__description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-fotos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-fotos__container {
+  background-color: #ffffff;
+}
+
+.sedona-feedback__title-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 36px;
+}
+
+.sedona-feedback__description {
+  font-size: 14px;
+  line-height: 21px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 28px;
+  width: 306px;
+}
+
+.sedona-feedback__fieldset {
+  border-bottom: 1px solid;
+  border-color: #e5e5e5;
+}
+
+.sedona-feedback__textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-feedback__container {
+  background-color: #ffffff;
+}
+
+.sedona-registry__label {
+  padding-left: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.sedona-registry__input {
+  padding: 0;
+  background-color: #f2f2f2;
+  border: 0;
+  width: 280px;
+  height: 58px;
+  margin-left: 20px;
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+}
+
+.sedona-registry__input:hover {
+  background: #e5e5e5;
+}
+
+.sedona-registry__input:focus {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 4px #e5e5e5;
+  box-shadow: 0 0 0 4px #e5e5e5;
+}
+
+.sedona-registry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-registry__wrapper {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+  padding-bottom: 23px;
+}
+
+.sedona-registry__field {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.sedona-registry__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.sedona-registry__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-contact__input {
+  background-color: #f2f2f2;
+  width: 222px;
+  height: 58px;
+  margin-left: 20px;
+  padding: 0;
+  padding-left: 16px;
+  border: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+}
+
+.sedona-contact__input:hover {
+  background: #e5e5e5;
+}
+
+.sedona-contact__input:focus {
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 0 4px #e5e5e5;
+  box-shadow: 0 0 0 4px #e5e5e5;
+}
+
+.sedona-contact__button {
+  width: 58px;
+  height: 58px;
+  border: 0;
+  background-color: #e6e6e6;
+}
+
+.sedona-contact__label {
+  padding-left: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.sedona-contact__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.sedona-contact__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sedona-contact__wrapper {
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+}
+
+.sedona-impression__control-label {
+  display: block;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-left: 62px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.sedona-impression__title {
+  position: relative;
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.sedona-impression__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-impression__container {
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+  padding-bottom: 8px;
+}
+
+.sedona-impression__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin-left: 20px;
+}
+
+.sedona-impression__control-input[type=radio]:checked + .sedona-impression__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.sedona-impression__control-input:hover + .sedona-impression__control-mark {
+  background: #e5e5e5;
+}
+
+.sedona-impression__control-input:active + .sedona-impression__control-mark {
+  background: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sedona-places__control-label {
+  display: block;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-left: 62px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+.sedona-places__item {
+  width: 280px;
+}
+
+.sedona-places__title {
+  position: relative;
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.sedona-places__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-places-container {
+  border-bottom: solid 1px;
+  border-color: rgb(229, 229, 229);
+  padding-bottom: 8px;
+}
+
+.sedona-places__control-checkmark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  margin-left: 20px;
+}
+
+.sedona-places__control-input:hover + .sedona-places__control-checkmark {
+  background: #e5e5e5;
+}
+
+.sedona-places__control-input:active + .sedona-places__control-checkmark {
+  background: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sedona-places__control-input[type=checkbox]:checked + .sedona-places__control-checkmark {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 15px;
+  content: "";
+}
+
+.sedona-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 36px;
+}
+
+.sedona-liked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sedona-telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.sedona-video__title {
+  margin: 0;
+  padding-top: 17px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 27px;
+}
+
+.sedona-video__container {
+  background-color: #ffffff;
+}
+
+.sedona-video__confirmation {
+  margin: auto;
+  border: none;
+  height: 177px;
+  width: 280px;
+}
+
+.sedona-video__button {
+  cursor: pointer;
+  position: absolute;
+  top: 63px;
+  left: 124px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sedona-video__wrapper {
+  position: relative;
+  background-image: url("../img/video-mobile.jpg");
+  width: 280px;
+  height: 177px;
+  margin: auto;
+  background-color: #000000;
+  background-repeat: no-repeat;
+}
+
+.sedona-video__description {
+  margin: auto;
+  padding-bottom: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  width: 266px;
+}
+
+.sedona-textarea__text {
+  font-family: inherit;
+  width: 279px;
+  height: 150px;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 16px;
+  padding-right: 16px;
+  border: 0;
+  margin-bottom: 52px;
+  resize: none;
+}
+
+.sedona-textarea__title {
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.sedona-send__button {
+  width: 281px;
+  height: 58px;
+  margin-left: 19px;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: inherit;
+}
+
+.sedona-send__button:hover {
+  background: #669ec0;
+}
+
+.sedona-send__button:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sedona-send__legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  margin-right: 20px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  padding-bottom: 24px;
+}
+
+.sedona-nav__toggle {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
+
+.sedona-nav {
+  position: relative;
+}
+
+.sedona-nav--closed .sedona-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 4px 0 0 #81b3d2, 0 13px 0 0 #81b3d2, 0 22px 0 0 #81b3d2;
+  box-shadow: 0 4px 0 0 #81b3d2, 0 13px 0 0 #81b3d2, 0 22px 0 0 #81b3d2;
+}
+
+.sedona-nav--closed .sedona-nav__toggle:active::before {
+  -webkit-box-shadow: 0 8px 0 0 fade(#81b3d2, 30%), 0 16px 0 0 fade(#81b3d2, 30%);
+  box-shadow: 0 8px 0 0 fade(#81b3d2, 30%), 0 16px 0 0 fade(#81b3d2, 30%);
+}
+
+.sedona-nav--opened .sedona-nav__toggle {
+  top: 17px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.sedona-nav--opened .sedona-nav__toggle::before,
+.sedona-nav--opened .sedona-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.sedona-nav--opened .sedona-nav__toggle::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.sedona-nav--opened .sedona-nav__toggle::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sedona-nav--nojs .sedona-nav__toggle {
+  display: none;
+}
+
+.sedona-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.sedona-map__arizon {
+  margin: 0;
+  position: relative;
+  border: none;
+  height: 350px;
+  width: 320px;
+}
+
+.sedona-map__container {
+  margin-top: 49px;
+  background-image: url("../img/map-mobile.jpg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  height: 350px;
+  margin-bottom: 8px;
+}
+
+.sedona-page__body {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  width: 320px;
+  margin: auto;
+}
+
+.sedona-page {
+  background-color: #e7e5e5;
+}
+
+.sedona-modal-error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sedona-modal-error__container {
+  margin: auto;
+  padding-top: 45px;
+  padding-right: 41px;
+  padding-left: 42px;
+  padding-bottom: 35px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.sedona-modal-error__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sedona-modal-error__br {
+  display: none;
+}
+
+.sedona-modal-error__description {
+  padding-top: 14px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 237px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 28px;
+}
+
+.sedona-modal-error__button {
+  display: block;
+  width: 180px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  margin: auto;
+  font-family: inherit;
+}
+
+.sedona-modal-error--closed {
+  display: none;
+}
+
+.sedona-modal-feedback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sedona-modal-feedback__container {
+  margin: auto;
+  padding-top: 39px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.sedona-modal-feedback__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sedona-modal-feedback__description {
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 244px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 55px;
+}
+
+.sedona-modal-feedback__button {
+  display: block;
+  width: 280px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  margin: auto;
+  font-family: inherit;
+}
+
+.sedona-modal-feedback__wrapper {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.sedona-modal-feedback--closed {
+  display: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2617,6 +4054,737 @@ button,
     padding-bottom: 40px;
     margin-left: 281px;
   }
+
+  .sedona-header__logo {
+    display: block;
+    margin-left: 291px;
+    z-index: 2;
+  }
+
+  .sedona-header__icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .sedona-header__toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .sedona-header__wrapper {
+    position: absolute;
+  }
+
+  .sedona-site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .sedona-site-list__item:nth-child(2) {
+    margin-right: 156px;
+  }
+
+  .sedona-site-list__item:hover {
+    background: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .sedona-site-list__item:active {
+    background: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .sedona-site-list__item {
+    height: 56px;
+    background-color: #ffffff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 153px;
+  }
+
+  .sedona-site-list__link {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+  }
+
+  .sedona-site-list__link:hover {
+    color: #81b3d2;
+  }
+
+  .sedona-site-list__link:active {
+    opacity: 0.3;
+    color: #000000;
+  }
+
+  .sedona-site-list__link--index {
+    padding-left: 48px;
+    padding-right: 47px;
+  }
+
+  .sedona-site-list__link--catalog {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+
+  .sedona-site-list__link--academy {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .sedona-site-list__link--current {
+    color: #766357;
+  }
+
+  .sedona-main-welcome {
+    width: 768px;
+    height: 518px;
+  }
+
+  .sedona-main-welcome__img {
+    width: 461px;
+    height: 350px;
+    margin-left: 153px;
+    margin-right: 154px;
+    margin-top: 77px;
+    margin-bottom: 91px;
+  }
+
+  .sedona-advantages {
+    padding-top: 48px;
+  }
+
+  .sedona-advantages__title-main {
+    width: 512px;
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  .sedona-advantages__description-main {
+    padding-bottom: 55px;
+    width: 520px;
+  }
+
+  .sedona-advantages__blue-decoration {
+    background-image: none;
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .sedona-advantages__blue {
+    width: 256px;
+    height: 256px;
+  }
+
+  .sedona-advantages__title-blue-decoration {
+    font-size: 21px;
+    padding-top: 40px;
+    margin: auto;
+    width: 192px;
+  }
+
+  .sedona-advantages__title-blue {
+    font-size: 21px;
+    width: 151px;
+    padding-top: 43px;
+    margin: auto;
+  }
+
+  .sedona-advantages__description-blue-decoration {
+    width: 193px;
+  }
+
+  .sedona-advantages__description-blue {
+    width: 184px;
+    margin: auto;
+  }
+
+  .sedona-advantages__number-blue {
+    padding-bottom: 24px;
+  }
+
+  .sedona-advantages__number-grey {
+    padding-bottom: 23px;
+  }
+
+  .sedona-advantages__description-grey {
+    padding-bottom: 44px;
+  }
+
+  .sedona-advantages__grey-square {
+    width: 189px;
+  }
+
+  .sedona-advantages__title-grey-square {
+    width: 189px;
+    margin: auto;
+  }
+
+  .sedona-advantages__grey-road {
+    width: 147px;
+    margin: auto;
+  }
+
+  .sedona-advantages__grey-tourists {
+    width: 149px;
+  }
+
+  .sedona-advantages__wrapper-grey {
+    padding-top: 42px;
+    padding-bottom: 0;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .sedona-advantages__list-grey {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sedona-advantages__item-grey:nth-child(2) {
+    border: none;
+  }
+
+  .sedona-advantages__picture {
+    height: 256px;
+  }
+
+  .sedona-advantages__title-grey {
+    font-size: 21px;
+    padding-top: 0;
+  }
+
+  .sedona-advantages__wrapper-bridge {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    min-height: 256px;
+  }
+
+  .sedona-advantages__wrapper-city {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-height: 256px;
+  }
+
+  .sedona-advantages__item-grey {
+    width: 256px;
+  }
+
+  .sedona-sublist {
+    padding: 0;
+  }
+
+  .sedona-sublist__title {
+    font-size: 21px;
+    padding-top: 158px;
+    text-align: center;
+  }
+
+  .sedona-sublist__description {
+    padding-top: 24px;
+    padding-bottom: 59px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sedona-sublist__housing {
+    width: 185px;
+    margin: auto;
+  }
+
+  .sedona-sublist__eating {
+    padding-left: 0;
+    width: 180px;
+    margin: auto;
+  }
+
+  .sedona-sublist__tablet-br {
+    display: block;
+  }
+
+  .sedona-sublist__souvenir {
+    width: 193px;
+    margin: auto;
+  }
+
+  .sedona-sublist__item {
+    width: 256px;
+    min-height: 330px;
+  }
+
+  .sedona-sublist__wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sedona-sublist__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sedona-sublist__icon-housing {
+    width: 75px;
+    height: 72px;
+    left: 90px;
+    top: 60px;
+  }
+
+  .sedona-sublist__icon-eating {
+    width: 76px;
+    height: 75px;
+    left: 345px;
+    top: 60px;
+  }
+
+  .sedona-sublist__icon-souvenir {
+    width: 64px;
+    height: 72px;
+    left: 607px;
+    top: 60px;
+  }
+
+  .sedona-search__title {
+    padding-top: 61px;
+    font-size: 30px;
+  }
+
+  .sedona-search__br {
+    display: block;
+  }
+
+  .sedona-search__description {
+    width: 435px;
+    margin: auto;
+    padding-bottom: 44px;
+    padding-top: 29px;
+  }
+
+  .sedona-search__button {
+    width: 458px;
+  }
+
+  .sedona-contacts-footer__link {
+    min-width: 166px;
+  }
+
+  .sedona-contacts-footer__wrapper {
+    padding-top: 49px;
+    padding-bottom: 46px;
+    padding-left: 45px;
+  }
+
+  .sedona-social__list {
+    margin-top: 36px;
+    margin-left: 97px;
+  }
+
+  .sedona-copyright__text {
+    padding-left: 100px;
+    padding-top: 50px;
+  }
+
+  .sedona-copyright__icon {
+    margin-top: 43px;
+    margin-left: 13px;
+  }
+
+  .sedona-welcome {
+    width: 768px;
+  }
+
+  .sedona-welcome__img {
+    width: 457px;
+    height: 78px;
+    margin-right: 155px;
+    margin-left: 156px;
+    margin-top: 95px;
+    margin-bottom: 117px;
+  }
+
+  .sedona-content-catalog__title {
+    padding-top: 66px;
+    font-size: 30px;
+    padding-bottom: 32px;
+  }
+
+  .sedona-content-catalog__tablet-br {
+    display: block;
+  }
+
+  .sedona-content-catalog__description {
+    width: 458px;
+    margin: auto;
+    padding-bottom: 81px;
+  }
+
+  .sedona-content-catalog__container {
+    border: none;
+  }
+
+  .sedona-fotos__title {
+    padding-top: 15px;
+  }
+
+  .sedona-fotos__text-wrapper {
+    padding-left: 20px;
+  }
+
+  .sedona-fotos__picture {
+    height: 267px;
+  }
+
+  .sedona-fotos__picture-long {
+    height: 400px;
+  }
+
+  .sedona-fotos__author {
+    padding-bottom: 15px;
+  }
+
+  .sedona-fotos__liked-number {
+    padding-top: 26px;
+  }
+
+  .sedona-fotos__button {
+    margin-top: 22px;
+    margin-right: 10px;
+  }
+
+  .sedona-fotos__wrapper {
+    padding: 0;
+    border: none;
+    width: 324px;
+    background-color: #eaeaea;
+  }
+
+  .sedona-fotos__wrapper-long {
+    padding: 0;
+    border: none;
+    width: 648px;
+    background-color: #eaeaea;
+  }
+
+  .sedona-fotos__description-wrapper-long {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .sedona-fotos__description-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .sedona-fotos__list {
+    margin-left: 60px;
+    margin-right: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 648px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .sedona-feedback__title-main {
+    padding-top: 64px;
+    font-size: 30px;
+  }
+
+  .sedona-feedback__description {
+    width: 438px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 102px;
+  }
+
+  .sedona-feedback__entry-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .sedona-registry__wrapper {
+    border-top: none;
+    border-bottom: none;
+    border-right: solid 1px;
+    border-color: rgb(229, 229, 229);
+    padding: 0;
+    padding-right: 43px;
+    margin-left: 40px;
+  }
+
+  .sedona-registry__title {
+    padding-top: 0;
+    padding-bottom: 28px;
+    font-size: 21px;
+    padding-left: 60px;
+  }
+
+  .sedona-contact__title {
+    padding-top: 0;
+    padding-bottom: 28px;
+    font-size: 21px;
+    padding-right: 48px;
+  }
+
+  .sedona-contact__wrapper {
+    border: none;
+    margin-left: 24px;
+  }
+
+  .sedona-impression__control-label {
+    width: 280px;
+    margin-left: 0;
+  }
+
+  .sedona-impression__title {
+    padding-top: 47px;
+    font-size: 21px;
+    padding-bottom: 28px;
+  }
+
+  .sedona-impression__container {
+    border: none;
+    padding: 0;
+  }
+
+  .sedona-impression__item {
+    width: 280px;
+    margin-right: 16px;
+  }
+
+  .sedona-impression__control-mark {
+    margin: 0;
+  }
+
+  .sedona-impression__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 619px;
+    margin: auto;
+    margin-left: 95px;
+  }
+
+  .sedona-places__control-label {
+    margin-left: 0;
+  }
+
+  .sedona-places__item {
+    width: 224px;
+    margin-right: 32px;
+  }
+
+  .sedona-places__title {
+    padding-top: 33px;
+    font-size: 21px;
+    padding-bottom: 28px;
+    width: 308px;
+  }
+
+  .sedona-places-container {
+    border: none;
+    padding: 0;
+  }
+
+  .sedona-places__control-checkmark {
+    margin: 0;
+  }
+
+  .sedona-places__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 530px;
+    margin: auto;
+    margin-left: 144px;
+  }
+
+  .sedona-email {
+    padding-bottom: 0;
+  }
+
+  .sedona-liked {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .sedona-video__title {
+    padding-top: 58px;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .sedona-video__container {
+    padding-bottom: 40px;
+  }
+
+  .sedona-video__confirmation {
+    width: 648px;
+    height: 500px;
+  }
+
+  .sedona-video__button {
+    top: 223px;
+    left: 297px;
+  }
+
+  .sedona-video__wrapper {
+    background-image: url("../img/video-tablet.jpg");
+    width: 648px;
+    height: 500px;
+    margin: auto;
+  }
+
+  .sedona-video__description {
+    width: 445px;
+    padding-bottom: 92px;
+  }
+
+  .sedona-textarea__text {
+    width: 648px;
+    margin-left: 60px;
+    height: 160px;
+    margin-bottom: 46px;
+  }
+
+  .sedona-textarea__title {
+    font-size: 21px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+  }
+
+  .sedona-send__button {
+    margin-left: 60px;
+    margin-bottom: 64px;
+    width: 324px;
+  }
+
+  .sedona-send__legend {
+    padding-bottom: 0;
+    display: unset;
+    margin-left: 157px;
+    font-size: 14px;
+  }
+
+  .sedona-nav__toggle {
+    display: none;
+  }
+
+  .sedona-footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .sedona-map__arizon {
+    width: 768px;
+  }
+
+  .sedona-map__container {
+    background-image: url("../img/map-tablet.jpg");
+    width: 768px;
+    margin-top: 58px;
+    margin-bottom: 0;
+  }
+
+  .sedona-page__body {
+    width: 768px;
+  }
+
+  .sedona-modal-error__container {
+    padding-top: 50px;
+    padding-right: 47px;
+    padding-left: 46px;
+    padding-bottom: 49px;
+  }
+
+  .sedona-modal-error__title {
+    margin: auto;
+    width: 307px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .sedona-modal-error__br {
+    display: block;
+  }
+
+  .sedona-modal-error__description {
+    width: 307px;
+    padding-bottom: 45px;
+    padding-top: 24px;
+  }
+
+  .sedona-modal-error__button {
+    width: 272px;
+  }
+
+  .sedona-modal-feedback__container {
+    padding-top: 50px;
+  }
+
+  .sedona-modal-feedback__title {
+    width: 444px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 97px;
+    margin-right: 99px;
+  }
+
+  .sedona-modal-feedback__description {
+    width: 422px;
+    padding-top: 24px;
+    padding-bottom: 45px;
+  }
+
+  .sedona-modal-feedback__button {
+    width: 448px;
+  }
+
+  .sedona-modal-feedback__wrapper {
+    padding: 44px;
+  }
 }
 
 @media (min-width: 768px) and (min-width: 1440px) {
@@ -2629,6 +4797,448 @@ button,
   .drink2go-map__container {
     background-image: url("../../img/map-tablet@2x.jpg");
     background-size: 1338px auto;
+  }
+
+  .sedona-main-welcome {
+    background-image: url("../img/background-welcome-main-desktop@2x.jpg");
+    background-size: 1338px auto;
+  }
+
+  .sedona-welcome {
+    background-image: url("../img/background-welcome-desktop@2x.jpg");
+    background-size: 1338px auto;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .sedona-places__item {
+    margin-right: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sedona-header__logo {
+    margin-left: 507px;
+  }
+
+  .sedona-site-list__item:nth-child(2) {
+    margin-right: 240px;
+  }
+
+  .sedona-site-list__item {
+    width: 240px;
+  }
+
+  .sedona-site-list__link--index {
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+
+  .sedona-site-list__link--academy {
+    padding-left: 71px;
+    padding-right: 70px;
+  }
+
+  .sedona-main-welcome {
+    width: 1200px;
+  }
+
+  .sedona-main-welcome__img {
+    margin-left: 370px;
+    margin-right: 370px;
+  }
+
+  .sedona-advantages {
+    padding-top: 59px;
+  }
+
+  .sedona-advantages__description-main {
+    padding-bottom: 44px;
+  }
+
+  .sedona-advantages__blue-decoration {
+    width: 400px;
+  }
+
+  .sedona-advantages__blue {
+    width: 400px;
+  }
+
+  .sedona-advantages__title-blue-decoration {
+    padding-top: 47px;
+  }
+
+  .sedona-advantages__title-blue {
+    padding-top: 51px;
+  }
+
+  .sedona-advantages__br {
+    display: block;
+  }
+
+  .sedona-advantages__description-blue-decoration {
+    width: 290px;
+  }
+
+  .sedona-advantages__description-blue {
+    width: 230px;
+  }
+
+  .sedona-advantages__description-grey {
+    padding-bottom: 65px;
+  }
+
+  .sedona-advantages__grey-square {
+    width: 315px;
+  }
+
+  .sedona-advantages__grey-road {
+    width: 270px;
+  }
+
+  .sedona-advantages__title-grey-road {
+    width: 147px;
+  }
+
+  .sedona-advantages__grey-tourists {
+    width: 290px;
+  }
+
+  .sedona-advantages__title-grey-tourists {
+    width: 145px;
+    margin: auto;
+  }
+
+  .sedona-advantages__item-grey {
+    width: 400px;
+  }
+
+  .sedona-sublist__housing {
+    width: 282px;
+  }
+
+  .sedona-sublist__eating {
+    width: 300px;
+  }
+
+  .sedona-sublist__desktop-br {
+    display: block;
+  }
+
+  .sedona-sublist__tablet-br {
+    display: none;
+  }
+
+  .sedona-sublist__souvenir {
+    width: 240px;
+  }
+
+  .sedona-sublist__item {
+    width: 400px;
+  }
+
+  .sedona-sublist__icon-housing {
+    left: 160px;
+    top: 60px;
+  }
+
+  .sedona-sublist__icon-eating {
+    left: 562px;
+    top: 60px;
+  }
+
+  .sedona-sublist__icon-souvenir {
+    left: 964px;
+    top: 60px;
+  }
+
+  .sedona-search__br {
+    display: block;
+  }
+
+  .sedona-search__description {
+    padding-bottom: 49px;
+  }
+
+  .sedona-contacts-footer__wrapper {
+    padding-left: 104px;
+  }
+
+  .sedona-social__list {
+    margin-left: 254px;
+  }
+
+  .sedona-copyright__text {
+    padding-left: 260px;
+  }
+
+  .sedona-welcome {
+    width: 1200px;
+  }
+
+  .sedona-welcome__img {
+    margin-right: 371px;
+    margin-left: 369px;
+    margin-bottom: 121px;
+    margin-top: 101px;
+  }
+
+  .sedona-content-catalog__title {
+    padding-top: 100px;
+  }
+
+  .sedona-content-catalog__description {
+    padding-bottom: 88px;
+  }
+
+  .sedona-fotos__title {
+    color: #ffffff;
+    padding-top: 22px;
+  }
+
+  .sedona-fotos__author {
+    color: #ffffff;
+  }
+
+  .sedona-fotos__liked-number {
+    color: #ffffff;
+    padding-top: 32px;
+  }
+
+  .sedona-fotos__icon {
+    fill: #ffffff;
+    opacity: 1;
+  }
+
+  .sedona-fotos__button {
+    margin-top: 28px;
+  }
+
+  .sedona-fotos__wrapper {
+    width: 400px;
+    height: 267px;
+    position: relative;
+  }
+
+  .sedona-fotos__wrapper-long {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+  }
+
+  .sedona-fotos__description-wrapper-long {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sedona-fotos__description-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sedona-fotos__list {
+    width: 1200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .sedona-feedback__title-main {
+    padding-top: 115px;
+  }
+
+  .sedona-feedback__description {
+    padding-bottom: 67px;
+    padding-top: 28px;
+  }
+
+  .sedona-registry__input {
+    width: 430px;
+  }
+
+  .sedona-registry__wrapper {
+    margin-left: 100px;
+    padding-right: 63px;
+  }
+
+  .sedona-registry__title {
+    padding-left: 79px;
+  }
+
+  .sedona-contact__input {
+    width: 344px;
+  }
+
+  .sedona-contact__wrapper {
+    margin-left: 44px;
+  }
+
+  .sedona-impression__title::before {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 330px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-impression__title::after {
+    content: "";
+    position: absolute;
+    top: 52%;
+    right: 330px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-impression__title {
+    padding-bottom: 45px;
+    padding-top: 56px;
+  }
+
+  .sedona-impression__item {
+    width: 280px;
+    margin-right: 28px;
+  }
+
+  .sedona-impression__control-mark {
+    margin: 0;
+  }
+
+  .sedona-impression__list {
+    width: 924px;
+    margin-left: 172px;
+  }
+
+  .sedona-places__item--bridge {
+    width: 173px;
+  }
+
+  .sedona-places__item--mountain {
+    width: 170px;
+  }
+
+  .sedona-places__item--park {
+    width: 153px;
+  }
+
+  .sedona-places__item--rocks {
+    width: 184px;
+  }
+
+  .sedona-places__title {
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+
+  .sedona-places__title::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-places__title::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 350px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-places__control-checkmark {
+    margin: 0;
+  }
+
+  .sedona-places__list {
+    margin-left: 164px;
+    width: 1000px;
+  }
+
+  .sedona-video__container {
+    padding-bottom: 82px;
+  }
+
+  .sedona-video__confirmation {
+    width: 800px;
+  }
+
+  .sedona-video__button {
+    top: 223px;
+    left: 371px;
+  }
+
+  .sedona-video__wrapper {
+    background-image: url("../img/video-desktop.jpg");
+    width: 800px;
+  }
+
+  .sedona-textarea__text {
+    width: 768px;
+    margin-bottom: 42px;
+    margin-left: 216px;
+  }
+
+  .sedona-textarea__title {
+    padding-top: 72px;
+  }
+
+  .sedona-textarea__title::before {
+    content: "";
+    position: absolute;
+    top: 65%;
+    left: 120px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-textarea__title::after {
+    content: "";
+    position: absolute;
+    top: 65%;
+    right: 120px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sedona-send__button {
+    margin-left: 216px;
+    width: 384px;
+  }
+
+  .sedona-send__legend {
+    margin-left: 216px;
+  }
+
+  .sedona-nav__toggle {
+    display: none;
+  }
+
+  .sedona-map__arizon {
+    width: 1200px;
+  }
+
+  .sedona-map__container {
+    background-image: url("../img/map-desktop.jpg");
+    width: 1200px;
+    margin-top: 66px;
+    margin-bottom: 0;
+  }
+
+  .sedona-page__body {
+    width: 1200px;
   }
 }
 
@@ -3102,6 +5712,23 @@ button,
 
   .drink2go-nav--closed,
   .drink2go-nav__list {
+    display: block;
+  }
+
+  .sedona-nav--closed .sedona-nav__list {
+    display: none;
+  }
+
+  .sedona-nav--closed .sedona-nav__list--active {
+    display: block;
+  }
+
+  .sedona-nav--opened .sedona-nav__list {
+    display: block;
+  }
+
+  .sedona-nav--closed,
+  .sedona-nav__list {
     display: block;
   }
 }

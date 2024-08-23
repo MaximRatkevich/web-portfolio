@@ -1,0 +1,52 @@
+.sedona-social__link {
+  background-color: #5fa8d3;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.sedona-social__link:hover {
+  background: #5496bd;
+}
+
+.sedona-social__link:active {
+  background: #5496bd;
+}
+
+.sedona-social__icon:active {
+  opacity: 0.3;
+}
+
+.sedona-social__list {
+  width: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 84px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 36px;
+    margin-left: 97px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 254px;
+  }
+}
+
+.sedona-social__item {
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+
+.sedona-social__icon--vk {
+  margin: 17px 12px 17px 12px;
+}
+
+.sedona-social__icon--telegram {
+  margin: 15px 13px 15px 13px;
+}
+
+.sedona-social__icon--youtube {
+  margin: 17px 14px 17px 14px;
+}

@@ -1,0 +1,61 @@
+.sedona-content-catalog__title {
+  margin: 0;
+  padding-top: 37px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    font-size: 30px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.sedona-content-catalog__wrapper {
+  background-color: #ffffff;
+}
+
+.sedona-content-catalog__tablet-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.sedona-content-catalog__description {
+  margin: auto;
+  padding-bottom: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 1);
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: auto;
+    padding-bottom: 81px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-bottom: 88px;
+  }
+}
+
+.sedona-content-catalog__container {
+  border-bottom: 1px solid;
+  border-color: rgba(229, 229, 229, 1);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

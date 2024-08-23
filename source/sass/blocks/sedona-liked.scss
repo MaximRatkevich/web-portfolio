@@ -1,0 +1,8 @@
+.sedona-liked {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}

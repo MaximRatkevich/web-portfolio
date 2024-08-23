@@ -1,0 +1,70 @@
+.sedona-header__logo {
+  margin-left: 67px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 291px;
+    z-index: 2;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 507px;
+  }
+}
+
+.sedona-header__icon {
+  margin-top: 17px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.sedona-header__toggle {
+  margin-left: 252px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 68px;
+  height: 56px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.sedona-header {
+  min-height: 55px;
+}
+
+.sedona-header__wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+}
+
+.sedona-header__container {
+  background-color: #ffffff;
+}

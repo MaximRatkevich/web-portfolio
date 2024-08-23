@@ -1,0 +1,81 @@
+.sedona-search__title {
+  margin: 0;
+  padding-top: 38px;
+  font-size: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    font-size: 30px;
+  }
+}
+
+.sedona-search__container {
+  background-color: #ffffff;
+}
+
+.sedona-search__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    display: block;
+  }
+}
+
+.sedona-search__description {
+  width: 262px;
+  margin: 0;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 34px;
+  color: rgba(51, 51, 51, 1);
+
+  @media (min-width: $tablet-width) {
+    width: 435px;
+    margin: auto;
+    padding-bottom: 44px;
+    padding-top: 29px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-bottom: 49px;
+  }
+}
+
+.sedona-search__button:hover {
+  background: #669ec0;
+}
+
+.sedona-search__button:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sedona-search__button {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #5496bd;
+  border-radius: 15px;
+  display: block;
+  margin: auto;
+  width: 250px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
+}

@@ -1,0 +1,180 @@
+.sedona-sublist {
+  padding-left: 65px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.sedona-sublist__title {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 30px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 158px;
+    text-align: center;
+  }
+}
+
+.sedona-sublist__description {
+  margin: 0;
+  text-transform: uppercase;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 59px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.sedona-sublist__housing {
+  width: 225px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    margin: auto;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 282px;
+  }
+}
+
+.sedona-sublist__eating {
+  padding-left: 3px;
+  width: 240px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 180px;
+    margin: auto;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 300px;
+  }
+}
+
+.sedona-sublist__desktop-br {
+  display: none;
+
+  @media (min-width: $sedona-desktop-width) {
+    display: block;
+  }
+}
+
+.sedona-sublist__tablet-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    display: none;
+  }
+}
+
+.sedona-sublist__souvenir {
+  width: 202px;
+
+  @media (min-width: $tablet-width) {
+    width: 193px;
+    margin: auto;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 240px;
+  }
+}
+
+.sedona-sublist__item {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-height: 330px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 400px;
+  }
+}
+
+.sedona-sublist__wrapper {
+  margin-bottom: 52px;
+  padding-top: 1px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.sedona-sublist__list {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.sedona-sublist__icon-housing {
+  position: absolute;
+  left: -49px;
+  top: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 90px;
+    top: 60px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    left: 160px;
+    top: 60px;
+  }
+}
+
+.sedona-sublist__icon-eating {
+  position: absolute;
+  left: -49px;
+  top: 158px;
+
+  @media (min-width: $tablet-width) {
+    width: 76px;
+    height: 75px;
+    left: 345px;
+    top: 60px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    left: 562px;
+    top: 60px;
+  }
+}
+
+.sedona-sublist__icon-souvenir {
+  position: absolute;
+  left: -45px;
+  top: 272px;
+
+  @media (min-width: $tablet-width) {
+    width: 64px;
+    height: 72px;
+    left: 607px;
+    top: 60px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    left: 964px;
+    top: 60px;
+  }
+}

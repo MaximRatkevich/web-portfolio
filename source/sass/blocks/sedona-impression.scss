@@ -1,0 +1,143 @@
+.sedona-impression__control-label {
+  display: block;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  padding-left: 62px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-left: 0;
+  }
+}
+
+.sedona-impression__title::before {
+  @media (min-width: $sedona-desktop-width) {
+    content: "";
+    position: absolute;
+    top: 52%;
+    left: 330px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.sedona-impression__title::after {
+  @media (min-width: $sedona-desktop-width) {
+    content: "";
+    position: absolute;
+    top: 52%;
+    right: 330px;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+}
+
+.sedona-impression__title {
+  position: relative;
+  margin: auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    font-size: 21px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-bottom: 45px;
+    padding-top: 56px;
+  }
+}
+
+.sedona-impression__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-impression__container {
+  border-bottom: solid 1px;
+  border-color: rgba(229, 229, 229, 1);
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.sedona-impression__item {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 280px;
+    margin-right: 28px;
+  }
+}
+
+.sedona-impression__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin: 0;
+  }
+}
+
+.sedona-impression__control-input[type="radio"]:checked + .sedona-impression__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background: #333333;
+  border-radius: 50%;
+  content: "";
+}
+
+.sedona-impression__control-input:hover + .sedona-impression__control-mark {
+  background: #e5e5e5;
+}
+
+.sedona-impression__control-input:active + .sedona-impression__control-mark {
+  background: #d5d5d5;
+  opacity: 0.3;
+}
+
+.sedona-impression__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 619px;
+    margin: auto;
+    margin-left: 95px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 924px;
+    margin-left: 172px;
+  }
+}

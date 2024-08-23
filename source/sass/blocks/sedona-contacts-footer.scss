@@ -1,0 +1,39 @@
+.sedona-contacts-footer__text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.sedona-contacts-footer__link {
+  display: block;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 166px;
+  }
+}
+
+.sedona-contacts-footer__text:hover {
+  color: #81b3d2;
+}
+
+.sedona-contacts-footer__text:active {
+  opacity: 0.3;
+}
+
+.sedona-contacts-footer__wrapper {
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+    padding-bottom: 46px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-left: 104px;
+  }
+}

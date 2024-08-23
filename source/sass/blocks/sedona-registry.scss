@@ -1,0 +1,99 @@
+.sedona-registry__label {
+  padding-left: 36px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.sedona-registry__input {
+  padding: 0;
+  background-color: #f2f2f2;
+  border: 0;
+  width: 280px;
+  height: 58px;
+  margin-left: 20px;
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: inherit;
+  outline: none;
+
+  @media (min-width: $sedona-desktop-width) {
+    width: 430px;
+  }
+}
+
+.sedona-registry__input:hover {
+  background: #e5e5e5;
+}
+
+.sedona-registry__input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 4px #e5e5e5;
+}
+
+.sedona-registry {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.sedona-registry__wrapper {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: rgba(229, 229, 229, 1);
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+    border-right: solid 1px;
+    border-color: rgba(229, 229, 229, 1);
+    padding: 0;
+    padding-right: 43px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 100px;
+    padding-right: 63px;
+  }
+}
+
+.sedona-registry__field {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.sedona-registry__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 28px;
+    font-size: 21px;
+    padding-left: 60px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-left: 79px;
+  }
+}
+
+.sedona-registry__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

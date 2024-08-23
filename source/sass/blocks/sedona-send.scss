@@ -1,0 +1,52 @@
+.sedona-send__button {
+  width: 281px;
+  height: 58px;
+  margin-left: 19px;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: inherit;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+    margin-bottom: 64px;
+    width: 324px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 216px;
+    width: 384px;
+  }
+}
+
+.sedona-send__button:hover {
+  background: #669ec0;
+}
+
+.sedona-send__button:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.sedona-send__legend {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    display: unset;
+    margin-left: 157px;
+    font-size: 14px;
+  }
+
+  @media (min-width: $sedona-desktop-width) {
+    margin-left: 216px;
+  }
+}
