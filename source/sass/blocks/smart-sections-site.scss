@@ -1,0 +1,117 @@
+.smart-sections-site h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  letter-spacing: 0.05em;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-default-white;
+}
+
+.smart-sections-site__button {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    width: 15px;
+    height: 15px;
+    margin-left: auto;
+    background-color: $color-transparent;
+    padding: 0;
+  }
+}
+
+.smart-sections-site__wrapper-button {
+  @media (max-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.smart-sections-site::before {
+  @media (max-width: $vp-375) {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -55px;
+    width: 375px;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
+  }
+}
+
+.smart-sections-site::after {
+  @media (max-width: $vp-375) {
+    content: "";
+    position: absolute;
+    left: -55px;
+    width: 375px;
+    height: 1px;
+    background-color: rgba(248, 253, 255, 0.7);
+  }
+}
+
+.smart-sections-site {
+  position: relative;
+}
+
+.smart-sections-site a {
+  font-size: 16px;
+  line-height: 135%;
+  text-transform: none;
+  color: $color-default-white;
+  opacity: 0.7;
+}
+
+.smart-sections-site__list {
+  display: grid;
+  grid-template-columns: 220px 220px;
+  column-gap: 30px;
+
+  @media (max-width: $vp-1024) {
+    grid-template-columns: 220px;
+  }
+}
+
+.smart-sections-site__button-icon--plus {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: block;
+    position: absolute;
+    background-image: url("../../img/svg/plus.svg");
+    width: 15px;
+    height: 15px;
+    top: -2px;
+  }
+}
+
+.smart-sections-site__list--open {
+  @media (max-width: $vp-768) {
+    display: block;
+  }
+}
+
+.smart-sections-site__list--closed {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.smart-sections-site__button-icon--minus {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    position: absolute;
+    display: block;
+    background-image: url("../../img/svg/minus.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+}

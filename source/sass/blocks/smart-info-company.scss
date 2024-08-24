@@ -1,0 +1,130 @@
+.smart-info-company__container {
+  background-color: $color-default-white;
+}
+
+.smart-info-company__wrapper-text h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+  font-weight: 400;
+  color: $color-black-pearl;
+
+  @media (max-width: $vp-768) {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+}
+
+.smart-info-company__button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 180px;
+  height: 45px;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  background-color: $color-transparent;
+  color: $color-deep-sky-blue;
+  cursor: pointer;
+  margin-top: 32px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: $vp-1024) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 160px;
+    height: 35px;
+    margin-top: 5px;
+  }
+}
+
+.smart-info-company__additional-mobile {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.smart-info-company__wrapper {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  width: 1220px;
+  display: flex;
+  margin: auto;
+
+  @media (max-width: $vp-1680) {
+    width: 64%;
+  }
+
+  @media (max-width: $vp-1440) {
+    width: 80%;
+  }
+
+  @media (max-width: $vp-1024) {
+    width: 674px;
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 44px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 84%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 82px;
+  }
+
+  @media (max-width: $vp-375) {
+    width: 270px;
+    padding-top: 17px;
+  }
+}
+
+.smart-info-company__img {
+  display: block;
+  width: 150px;
+  height: 320px;
+
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.smart-info-company__wrapper-text {
+  width: 970px;
+  margin-left: 100px;
+  min-height: 170px;
+
+  @media (max-width: $vp-1680) {
+    width: 80%;
+    margin-left: 8%;
+  }
+
+  @media (max-width: $vp-1024) {
+    width: 495px;
+    margin-left: 29px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.smart-info-company__wrapper-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+
+  @media (max-width: $vp-768) {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+}

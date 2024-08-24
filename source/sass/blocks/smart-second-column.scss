@@ -1,0 +1,10 @@
+.smart-second-column {
+  @media (max-width: $vp-375) {
+    margin-bottom: 20px;
+  }
+}
+
+.smart-second-column__item {
+  display: block;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,291 @@
+.smart-goods__container {
+  background-color: $color-black-pearl;
+}
+
+.smart-goods__list::before {
+  @media (max-width: $vp-768) {
+    content: "Товары и услуги Smart Device";
+    display: block;
+    margin: auto;
+    width: 260px;
+    font-size: 28px;
+    line-height: 140.62%;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: $color-default-white;
+    padding-top: 47px;
+    margin: 0;
+  }
+}
+
+.smart-goods__wrapper {
+  width: 1220px;
+  margin: auto;
+
+  @media (max-width: $vp-1440) {
+    width: 85%;
+  }
+
+  @media (max-width: $vp-1024) {
+    width: 670px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 86%;
+    position: relative;
+  }
+
+  @media (max-width: $vp-375) {
+    width: 270px;
+  }
+}
+
+.smart-goods__list {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  column-gap: 85px;
+  row-gap: 30px;
+  padding-bottom: 140px;
+
+  @media (max-width: $vp-1440) {
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+  }
+
+  @media (max-width: $vp-1024) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-bottom: 84px;
+  }
+}
+
+.smart-goods__wrapper h2 {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $color-default-white;
+  padding-top: 68px;
+  padding-bottom: 50px;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 55px;
+    padding-bottom: 38px;
+  }
+
+  @media (max-width: $vp-768) {
+    display: none;
+    padding-bottom: 20px;
+  }
+}
+
+.smart-goods__wrapper h3 {
+  width: 210px;
+  font-weight: 400;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 38px;
+    padding-left: 45px;
+    width: 195px;
+  }
+
+  @media (max-width: $vp-768) {
+    width: 165px;
+    padding-top: 25px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: $vp-375) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.smart-goods__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.smart-goods__decoration {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: $color-deep-sky-blue;
+  border-radius: 3px 0 0 0;
+
+  @media (max-width: $vp-768) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.smart-goods__icon {
+  margin-left: 30px;
+  margin-top: 26px;
+
+  @media (max-width: $vp-768) {
+    margin-left: 19px;
+    margin-top: 15px;
+  }
+}
+
+.smart-goods__wrapper-production::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.smart-goods__wrapper-production {
+  background-image: image-set(
+    url("../img/production@2x.webp") 2x,
+    url("../img/production.webp") 1x,
+    url("../img/production@2x.jpg") 2x,
+    url("../img/production.jpg") 1x,
+  );
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-deep-sky-blue;
+
+  @media (max-width: $vp-1024) {
+    background-image: image-set(
+      url("../img/production-tablet@2x.webp") 2x,
+      url("../img/production-tablet.webp") 1x,
+      url("../img/production-tablet@2x.jpg") 2x,
+      url("../img/production-tablet.png") 1x,
+    );
+    min-height: 250px;
+    background-size: 100%;
+  }
+
+  @media (max-width: $vp-768) {
+    background-image: image-set(
+      url("../img/production-mobile@2x.webp") 2x,
+      url("../img/production-mobile.webp") 1x,
+      url("../img/production-mobile@2x.jpg") 2x,
+      url("../img/production-mobile.png") 1x,
+    );
+  }
+}
+
+.smart-goods__wrapper-installation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.smart-goods__wrapper-installation {
+  background-image: image-set(
+    url("../img/installation@2x.webp") 2x,
+    url("../img/installation.webp") 1x,
+    url("../img/installation@2x.jpg") 2x,
+    url("../img/installation.jpg") 1x,
+  );
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-deep-sky-blue;
+
+
+  @media (max-width: $vp-1024) {
+    background-image: image-set(
+      url("../img/installation-tablet@2x.webp") 2x,
+      url("../img/installation-tablet.webp") 1x,
+      url("../img/installation-tablet@2x.jpg") 2x,
+      url("../img/installation-tablet.png") 1x,
+    );
+    min-height: 250px;
+    background-size: 100%;
+  }
+
+  @media (max-width: $vp-768) {
+    background-image: image-set(
+      url("../img/installation-mobile@2x.webp") 2x,
+      url("../img/installation-mobile.webp") 1x,
+      url("../img/installation-mobile@2x.jpg") 2x,
+      url("../img/installation-mobile.png") 1x,
+    );
+  }
+}
+
+.smart-goods__wrapper-lighting::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+}
+
+.smart-goods__wrapper-lighting {
+  background-image: image-set(
+    url("../img/lighting@2x.webp") 2x,
+    url("../img/lighting.webp") 1x,
+    url("../img/lighting@2x.jpg") 2x,
+    url("../img/lighting.jpg") 1x,
+  );
+  min-height: 650px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-deep-sky-blue;
+
+
+  @media (max-width: $vp-1024) {
+    background-image: image-set(
+      url("../img/lighting-tablet@2x.webp") 2x,
+      url("../img/lighting-tablet.webp") 1x,
+      url("../img/lighting-tablet@2x.jpg") 2x,
+      url("../img/lighting-tablet.png") 1x,
+    );
+    min-height: 250px;
+    background-size: 100%;
+  }
+
+  @media (max-width: $vp-768) {
+    background-image: image-set(
+      url("../img/lighting-mobile@2x.webp") 2x,
+      url("../img/lighting-mobile.webp") 1x,
+      url("../img/lighting-mobile@2x.jpg") 2x,
+      url("../img/lighting-mobile.png") 1x,
+    );
+  }
+}
+
+.smart-goods__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
