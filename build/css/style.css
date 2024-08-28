@@ -866,9 +866,9 @@ button,
 }
 
 .main-block__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -889,7 +889,7 @@ button,
 .main-block__text {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   margin: auto;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: aliceblue;
@@ -1033,7 +1033,6 @@ button,
 
 .main-block__description {
   width: 90%;
-  padding-top: 20px;
   padding-left: 40px;
   padding-bottom: 40px;
   margin: auto;
@@ -6847,6 +6846,12 @@ button,
     margin-top: auto;
   }
 
+  .main-block__title {
+    text-align: center;
+    padding-left: 0;
+    margin: auto;
+  }
+
   .footer-nav__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7144,10 +7149,6 @@ button,
 }
 
 @media (max-width: 770px) {
-  .main-block__container {
-    height: 1600px;
-  }
-
   .main-block__git-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7169,6 +7170,10 @@ button,
 
   .main-block__link {
     margin-bottom: 20px;
+  }
+
+  .main-block__description {
+    font-size: 20px;
   }
 }
 
@@ -7615,7 +7620,57 @@ button,
   }
 }
 
+@media (max-width: 519px) {
+  .main-block__git-wrapper {
+    height: auto;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .main-block__git-description {
+    margin: 0;
+  }
+
+  .main-block__list {
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .main-block__description {
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .footer-nav__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-block__description {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 375px) {
+  .main-block__text {
+    font-size: 16px;
+  }
+
+  .main-block__title {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .footer-nav__text {
+    font-size: 16px;
+  }
+
   .smart-main-block__wrapper {
     width: 270px;
   }

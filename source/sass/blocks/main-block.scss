@@ -17,10 +17,6 @@
   @media (max-width: $vp-1024) {
     height: 1400px;
   }
-
-  @media (max-width: $vp-770) {
-    height: 1600px;
-  }
 }
 
 .main-block {
@@ -36,7 +32,7 @@
 }
 
 .main-block__wrapper {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   top:50%;
   left:50%;
@@ -56,7 +52,7 @@
 .main-block__text {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   margin: auto;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: aliceblue;
@@ -64,6 +60,10 @@
 
   @media (max-width: $vp-1440) {
     margin-left: 0;
+  }
+
+  @media (max-width: $vp-375) {
+    font-size: 16px;
   }
 }
 
@@ -137,6 +137,12 @@
     flex-direction: column;
     height: 100%;
   }
+
+  @media (max-width: $vp-516) {
+    height: auto;
+    padding: 0;
+    padding-left: 15px;
+  }
 }
 
 .main-block__git-description {
@@ -154,6 +160,10 @@
 
   @media (max-width: $vp-770) {
     margin: auto;
+  }
+
+  @media (max-width: $vp-516) {
+    margin: 0;
   }
 }
 
@@ -181,6 +191,11 @@
 
   @media (max-width: $vp-770) {
     flex-direction: column;
+  }
+
+  @media (max-width: $vp-516) {
+    padding: 0;
+    padding-left: 15px;
   }
 }
 
@@ -286,11 +301,23 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  @media (max-width: $vp-1024) {
+    text-align: center;
+    padding-left: 0;
+    margin: auto;
+
+  }
+
+  @media (max-width: $vp-375) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
 }
 
 .main-block__description {
   width: 90%;
-  padding-top: 20px;
   padding-left: 40px;
   padding-bottom: 40px;
   margin: auto;
@@ -299,4 +326,20 @@
   font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.5;
+
+  @media (max-width: $vp-770) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $vp-516) {
+    font-size: 18px;
+    padding: 0;
+    margin: auto;
+  }
+
+  @media (max-width: $vp-400) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
 }
