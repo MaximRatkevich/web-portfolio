@@ -1,7 +1,7 @@
-const modal = document.querySelector('.modal-call');
-const modalOpenElement = document.querySelector('.nav__button');
-const modalCloseElement = modal.querySelector('.modal-call__button-close');
-const wrapper = document.querySelector('.wrapper');
+const modal = document.querySelector('.smart-modal-call');
+const modalOpenElement = document.querySelector('.smart-nav__button');
+const modalCloseElement = modal.querySelector('.smart-modal-call__button-close');
+const wrapper = document.querySelector('.smart-wrapper');
 
 if (modal) {
   modalOpenElement.addEventListener('click', () => {

@@ -1874,23 +1874,15 @@ button,
 
 .drink2go-sorting__control-view {
   font-family: "Montserrat", "Arial", sans-serif;
-  margin-left: auto;
-  width: 165px;
+  margin-right: auto;
   padding-left: 10px;
+  margin-top: 5px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  border: 0;
   color: #7859cf;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
-}
-
-.drink2go-sorting__status {
-  width: 7px;
-  height: 25px;
-  /* (3px * 3) + (2px * 2) */
-  background: linear-gradient(white 0 3px, black 3px 6px, white 6px 8px, black 8px 11px, white 11px 13px, black 13px 16px, white 16px 25px);
 }
 
 .drink2go-sorting__title {

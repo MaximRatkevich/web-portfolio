@@ -1,5 +1,5 @@
-const scrollButton = document.querySelector('.main-block__button');
-const feedbackContainer = document.querySelector('.feedback__container');
+const scrollButton = document.querySelector('.smart-main-block__button');
+const feedbackContainer = document.querySelector('.smart-feedback__container');
 
 function scrollTo(element) {
   window.scroll({

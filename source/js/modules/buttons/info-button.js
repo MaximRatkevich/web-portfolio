@@ -1,5 +1,5 @@
-const infoAdditional = document.querySelector('.info-company__additional');
-const infoButton = document.querySelector('.info-company__button');
+const infoAdditional = document.querySelector('.smart-info-company__additional');
+const infoButton = document.querySelector('.smart-info-company__button');
 
 
 infoButton.addEventListener('click', () => {
