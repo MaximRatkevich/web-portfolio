@@ -18,6 +18,22 @@
   }
 }
 
+.drink2go-connection__wrapper-two {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+}
+
 .drink2go-connection__logo-text {
   display: none;
 

@@ -28,6 +28,19 @@
   cursor: pointer;
 }
 
+.drink2go-sorting__status {
+  width: 7px;
+  height: 25px; /* (3px * 3) + (2px * 2) */
+  background:
+      linear-gradient(white 0 3px,
+                      black 3px 6px,
+                      white 6px 8px,
+                      black 8px 11px,
+                      white 11px 13px,
+                      black 13px 16px,
+                      white 16px 25px);
+}
+
 .drink2go-sorting__title {
   margin: 0;
   padding-top: 4px;

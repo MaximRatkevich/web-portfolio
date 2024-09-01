@@ -842,6 +842,7 @@ button,
 }
 
 .main-block__container {
+  /*123*/
   position: relative;
   margin: 0;
   padding-left: 0;
@@ -1087,6 +1088,14 @@ button,
   background-color: rgba(0, 0, 0, 0.041);
   border: none;
   border-radius: 15px 15px 15px 15px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  /* Добавляем плавный переход */
+}
+
+.portfolio__button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Увеличиваем яркость при наведении */
 }
 
 .portfolio__button-img {
@@ -1877,6 +1886,13 @@ button,
   cursor: pointer;
 }
 
+.drink2go-sorting__status {
+  width: 7px;
+  height: 25px;
+  /* (3px * 3) + (2px * 2) */
+  background: linear-gradient(white 0 3px, black 3px 6px, white 6px 8px, black 8px 11px, white 11px 13px, black 13px 16px, white 16px 25px);
+}
+
 .drink2go-sorting__title {
   margin: 0;
   padding-top: 4px;
@@ -2034,6 +2050,17 @@ button,
   display: flex;
   padding-top: 20px;
   border-bottom: 1px solid #f0ebff;
+}
+
+.drink2go-connection__wrapper-two {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .drink2go-connection__logo-text {
@@ -5067,6 +5094,13 @@ button,
     width: 768px;
   }
 
+  .drink2go-connection__wrapper-two {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
   .drink2go-connection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6176,6 +6210,10 @@ button,
     margin-left: 172px;
   }
 
+  .sedona-places__control-label {
+    padding-top: 0;
+  }
+
   .sedona-places__item--bridge {
     width: 173px;
   }
@@ -6522,6 +6560,17 @@ button,
     width: 318px;
     margin: 0;
     padding-top: 0;
+  }
+
+  .drink2go-connection__wrapper-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: auto;
   }
 
   .drink2go-connection__logo-text {

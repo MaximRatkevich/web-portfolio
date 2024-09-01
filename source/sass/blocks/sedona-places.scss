@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
   }
+
+  @media (min-width: $sedona-desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .sedona-places__item {

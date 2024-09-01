@@ -41,6 +41,11 @@
   background-color: rgba(0, 0, 0, 0.041);
   border: none;
   border-radius: 15px 15px 15px 15px;
+  transition: background-color 0.3s ease; /* Добавляем плавный переход */
+}
+
+.portfolio__button:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Увеличиваем яркость при наведении */
 }
 
 .portfolio__button-img {
